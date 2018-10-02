@@ -10,6 +10,7 @@ import UIKit
 
 class ScheduleTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lockImageView: UIImageView!
     @IBOutlet weak var noteLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
@@ -18,16 +19,10 @@ class ScheduleTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.setupUI()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-    }
-
-    func setupUI() {
-        dateLabel.setupBorder()
-        timeLabel.customBorder(radius: timeLabel.frame.height/2, color: Common.mainColor(), width: 2)
     }
     
     @IBAction func changeAlarmStatus(_ sender: UISwitch) {
@@ -46,12 +41,20 @@ class ScheduleTableViewCell: UITableViewCell {
     }
     
     func setupCell(schedule : Schedule) {
-        self.setupUI()
-        self.schedule = schedule
+        self.schedule       = schedule
         noteLabel.text      = schedule.note
         noteLabel.setLineHeight(lineHeight: 1.2, lineSpacing: 1)
         dateLabel.text      = Common.stringFromTimeInterval(timeInterval: schedule.time, format: "dd-MM-yyyy")
         timeLabel.text      = Common.stringFromTimeInterval(timeInterval: schedule.time, format: "HH:mm")
         isAlarmSwitch.isOn  = schedule.isAlarm
+        
+        // Border UI
+        dateLabel.setupBorder()
+        timeLabel.customBorder(radius: timeLabel.frame.height/2, color: Common.mainColor(), width: 2)
+        if (schedule.password?.count)! > 0 {
+            lockImageView.isHidden = false
+        } else {
+            lockImageView.isHidden = true
+        }
     }
 }

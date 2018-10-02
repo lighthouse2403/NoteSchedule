@@ -15,6 +15,7 @@ class EditScheduleViewController: OriginalViewController {
     @IBOutlet weak var dateButton: UIButton!
     @IBOutlet weak var noteTextView: UITextView!
     @IBOutlet weak var alarmSwitch: UISwitch!
+    @IBOutlet weak var passwordTextfield: UITextField!
     var time: Double = Date().timeStamp()
     let datePicker = DatePickerCustomView.initFromNib()
     var schedule: Schedule!
@@ -72,9 +73,10 @@ class EditScheduleViewController: OriginalViewController {
     }
     
     override func tappedRightBarButton(sender: UIButton) {
-        let note    = noteTextView.text.count > 0 ? noteTextView.text! : "Nhắc nhớ"
-        let id      = schedule.id!
-        let dict    = ["id": id, "time": time, "isAlarm": alarmSwitch.isOn, "note": note] as [String : Any]
+        let password    = (passwordTextfield.text?.count)! > 0 ? passwordTextfield.text! : ""
+        let note        = noteTextView.text.count > 0 ? noteTextView.text! : "Nhắc nhớ"
+        let id          = schedule.id!
+        let dict        = ["id": id, "time": time, "isAlarm": alarmSwitch.isOn, "note": note, "password": password] as [String : Any]
         DatabaseManager.syncSchedule(scheduleDict: dict, onCompletionHandler: {
             if self.alarmSwitch.isOn {
                 if self.time >= Date().timeStamp() {

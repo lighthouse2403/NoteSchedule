@@ -51,6 +51,46 @@ class ScheduleListViewController: OriginalViewController, UITableViewDataSource,
         self.navigationController?.pushViewController(newScheduleViewController, animated: true)
     }
     
+    func gotoEditSchedule(schedule: Schedule) {
+        let editScheduleViewController      = main_storyboard.instantiateViewController(withIdentifier: "EditScheduleViewController") as! EditScheduleViewController
+        editScheduleViewController.schedule = schedule
+        self.navigationController?.pushViewController(editScheduleViewController, animated: true)
+    }
+    
+    func deleteSchedule(schedule: Schedule) {
+        self.showAlert(title: "Xác nhận", message: "Bạn chắc chắn muốn xoá nhắc nhớ này?", cancelTitle: "Huỷ", okTitle: "Đồng ý", onOKAction: {
+            DatabaseManager.deleteSchedule(id: schedule.id!, context: nil, onCompletionHandler: {
+                Common.cancelNotification(fireDate: Date.init(timeIntervalSince1970: schedule.time))
+                self.getData()
+            })
+        })
+    }
+    
+    func editScheduleView(schedule: Schedule) {
+        PasswordView.showInView(onOKBlock: { password in
+            // Tapped ok button
+            if password == schedule.password {
+                self.gotoEditSchedule(schedule: schedule)
+            } else {
+                self.showAlert(title: "Lỗi", message: "Mật khẩu không đúng, vui lòng kiểm tra lại", cancelTitle: "Bỏ qua", okTitle: "Tiếp tục", onOKAction: {
+                    self.editScheduleView(schedule: schedule)
+                })
+            }
+        })
+    }
+    
+    func confirmDeleteScheduleView(schedule: Schedule) {
+        PasswordView.showInView(onOKBlock: { password in
+            // Tapped ok button
+            if password == schedule.password {
+                self.deleteSchedule(schedule: schedule)
+            } else {
+                self.showAlert(title: "Lỗi", message: "Mật khẩu không đúng, vui lòng kiểm tra lại", cancelTitle: "Bỏ qua", okTitle: "Tiếp tục", onOKAction: {
+                    self.confirmDeleteScheduleView(schedule: schedule)
+                })
+            }
+        })
+    }
     // MARK: - Handle Data
     
     func getData() {
@@ -82,21 +122,26 @@ class ScheduleListViewController: OriginalViewController, UITableViewDataSource,
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let schedule = scheduleArray[indexPath.row]
-//
-        let editScheduleViewController      = main_storyboard.instantiateViewController(withIdentifier: "EditScheduleViewController") as! EditScheduleViewController
-        editScheduleViewController.schedule = schedule
-        self.navigationController?.pushViewController(editScheduleViewController, animated: true)
+
+        if (schedule.password?.count)! > 0 {
+            // Has password
+            self.editScheduleView(schedule: schedule)
+        } else {
+            // Hasn't password
+            self.gotoEditSchedule(schedule: schedule)
+        }
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            self.showAlert(title: "Xác nhận", message: "Bạn chắc chắn muốn xoá nhắc nhớ này?", cancelTitle: "Huỷ", okTitle: "Đồng ý", onOKAction: {
-                let schedule = self.scheduleArray[indexPath.row]
-                DatabaseManager.deleteSchedule(id: schedule.id!, context: nil, onCompletionHandler: {
-                    Common.cancelNotification(fireDate: Date.init(timeIntervalSince1970: schedule.time))
-                    self.getData()
-                })
-            })
+            let schedule = self.scheduleArray[indexPath.row]
+            if (schedule.password?.count)! > 0 {
+                // Has password
+                self.confirmDeleteScheduleView(schedule: schedule)
+            } else {
+                // Hasn't password
+                self.deleteSchedule(schedule: schedule)
+            }
         }
     }
 }

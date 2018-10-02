@@ -11,6 +11,7 @@ import UserNotifications
 
 class NewScheduleViewController: OriginalViewController {
 
+    @IBOutlet weak var passwordTextfield: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var timeButton: UIButton!
     @IBOutlet weak var dateButton: UIButton!
@@ -58,8 +59,9 @@ class NewScheduleViewController: OriginalViewController {
     
     override func tappedRightBarButton(sender: UIButton) {
         
-        let note = noteTextView.text.count > 0 ? noteTextView.text! : "Nhắc nhớ"
-        let dict = ["id": String(Date().timeIntervalSince1970), "time": time, "isAlarm": alarmSwitch.isOn, "note": note] as [String : Any]
+        let password        = (passwordTextfield.text?.count)! > 0 ? passwordTextfield.text! : ""
+        let note            = noteTextView.text.count > 0 ? noteTextView.text! : "Nhắc nhớ"
+        let dict            = ["id": String(Date().timeIntervalSince1970), "time": time, "isAlarm": alarmSwitch.isOn, "note": note, "password": password] as [String : Any]
         DatabaseManager.syncSchedule(scheduleDict: dict, onCompletionHandler: {
             if self.alarmSwitch.isOn {
                 if self.time >= Date().timeStamp() {

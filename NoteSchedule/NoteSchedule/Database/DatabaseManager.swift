@@ -83,10 +83,10 @@ class DatabaseManager: NSObject {
         return scheduleArray != nil ? scheduleArray! : [Schedule]()
     }
     
-    static func deleteSchedule(id: String, password: String, context: NSManagedObjectContext?, onCompletionHandler:@escaping () -> ()) {
+    static func deleteSchedule(id: String, context: NSManagedObjectContext?, onCompletionHandler:@escaping () -> ()) {
         MagicalRecord.save({(localContext : NSManagedObjectContext) in
             
-            let schedule = self.getSchedule(id: id, password: password, context: localContext)
+            let schedule = self.getSchedule(id: id, context: localContext)
             schedule?.mr_deleteEntity()
             
         }, completion: {(isCompletion,error) in

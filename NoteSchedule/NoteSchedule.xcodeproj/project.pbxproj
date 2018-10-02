@@ -14,6 +14,8 @@
 		FB2D9E0621632CDB009BB827 /* DatePickerCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB2D9E0421632CDB009BB827 /* DatePickerCustomView.xib */; };
 		FB2D9E0821635103009BB827 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB2D9E0721635103009BB827 /* GoogleService-Info.plist */; };
 		FB2D9E0A21635E91009BB827 /* NoteSchedule.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = FB2D9E0921635E91009BB827 /* NoteSchedule.xcmappingmodel */; };
+		FB2D9E0C21636DFD009BB827 /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D9E0B21636DFD009BB827 /* PasswordView.swift */; };
+		FB2D9E1021636FD6009BB827 /* PasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB2D9E0F21636FD5009BB827 /* PasswordView.xib */; };
 		FB7D0FE021630A34009B8127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D0FDF21630A34009B8127 /* AppDelegate.swift */; };
 		FB7D0FE521630A34009B8127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7D0FE321630A34009B8127 /* Main.storyboard */; };
 		FB7D0FE721630A36009B8127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7D0FE621630A36009B8127 /* Assets.xcassets */; };
@@ -112,6 +114,8 @@
 		FB2D9E0421632CDB009BB827 /* DatePickerCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerCustomView.xib; sourceTree = "<group>"; };
 		FB2D9E0721635103009BB827 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FB2D9E0921635E91009BB827 /* NoteSchedule.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = NoteSchedule.xcmappingmodel; sourceTree = "<group>"; };
+		FB2D9E0B21636DFD009BB827 /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
+		FB2D9E0F21636FD5009BB827 /* PasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasswordView.xib; sourceTree = "<group>"; };
 		FB7D0FDC21630A34009B8127 /* NoteSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7D0FDF21630A34009B8127 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB7D0FE421630A34009B8127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -231,6 +235,8 @@
 			children = (
 				FB2D9E0321632CDB009BB827 /* DatePickerCustomView.swift */,
 				FB2D9E0421632CDB009BB827 /* DatePickerCustomView.xib */,
+				FB2D9E0B21636DFD009BB827 /* PasswordView.swift */,
+				FB2D9E0F21636FD5009BB827 /* PasswordView.xib */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -574,6 +580,7 @@
 				FB2D9E0821635103009BB827 /* GoogleService-Info.plist in Resources */,
 				FB7D0FE521630A34009B8127 /* Main.storyboard in Resources */,
 				FB2D9E0621632CDB009BB827 /* DatePickerCustomView.xib in Resources */,
+				FB2D9E1021636FD6009BB827 /* PasswordView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -706,6 +713,7 @@
 				FB7D107721632765009B8127 /* ImageViewController.swift in Sources */,
 				FB7D106821632765009B8127 /* UIColor.swift in Sources */,
 				FB7D108021632765009B8127 /* VideoScrubber.swift in Sources */,
+				FB2D9E0C21636DFD009BB827 /* PasswordView.swift in Sources */,
 				FB7D107921632765009B8127 /* ItemController.swift in Sources */,
 				FB7D101421631EC5009B8127 /* EditScheduleViewController.swift in Sources */,
 				FB7D107421632765009B8127 /* GallerySwipeToDismissTransition.swift in Sources */,
