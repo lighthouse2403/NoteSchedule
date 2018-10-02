@@ -34,7 +34,7 @@ class EditScheduleViewController: OriginalViewController {
     // MARK: Set up Navigation bar
     func setupNavigationBar() {
         self.addLeftBarItem(imageName: "back", title: "")
-        self.addRightBarItem(imageName: "done", imageTouch: "", title: "")
+        self.addRightBarItem(imageName: "tick", imageTouch: "", title: "")
         self.customTitle(title: "Sửa kế hoạch")
     }
     
