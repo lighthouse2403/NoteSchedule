@@ -9,6 +9,9 @@ PODS:
     - FirebaseAnalytics (= 5.2.0)
   - Firebase/CoreOnly (5.9.0):
     - FirebaseCore (= 5.1.4)
+  - Firebase/Database (5.9.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (= 5.0.3)
   - FirebaseAnalytics (5.2.0):
     - FirebaseCore (~> 5.1)
     - FirebaseInstanceID (~> 3.2)
@@ -20,6 +23,9 @@ PODS:
     - nanopb (~> 0.3)
   - FirebaseCore (5.1.4):
     - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseDatabase (5.0.3):
+    - FirebaseCore (~> 5.0)
+    - leveldb-library (~> 1.18)
   - FirebaseInstanceID (3.2.2):
     - FirebaseCore (~> 5.1)
     - GoogleUtilities/Environment (~> 5.3)
@@ -48,6 +54,10 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (5.3.0):
     - GoogleUtilities/Logger
+  - leveldb-library (1.20)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
@@ -58,6 +68,9 @@ DEPENDENCIES:
   - Crashlytics (~> 3.10.1)
   - Fabric (~> 1.7.5)
   - Firebase (>= 2.5.0)
+  - Firebase/Core
+  - Firebase/Database
+  - MagicalRecord
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -66,9 +79,12 @@ SPEC REPOS:
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
+    - FirebaseDatabase
     - FirebaseInstanceID
     - GoogleAppMeasurement
     - GoogleUtilities
+    - leveldb-library
+    - MagicalRecord
     - nanopb
 
 SPEC CHECKSUMS:
@@ -77,11 +93,14 @@ SPEC CHECKSUMS:
   Firebase: 383fa29aca93e371cab776b48a5c66544d3c2003
   FirebaseAnalytics: 831f1f127f4a75698e9875a87bf7e2668730d953
   FirebaseCore: 2a84b6b325792a4319ef71ee18819dcba08d2fd7
+  FirebaseDatabase: e2bcbc106adc4b11a2da3ec2eb63c0c4a44f2f54
   FirebaseInstanceID: 78ba376fcd5b94c001f9999b2cbd3d1f1e56e78d
   GoogleAppMeasurement: 2b3a023a61239c8d002e6e4fcf4abce8eddce0e0
   GoogleUtilities: 760ccb53b7c7f40f9c02d8c241f76f841a7a6162
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: ea735a70499ecac804cbbf971cd21b218b3a10bb
+PODFILE CHECKSUM: af36db04c7fbad3887289c7e1cbe1a25a3aa82cf
 
 COCOAPODS: 1.6.0.beta.1
