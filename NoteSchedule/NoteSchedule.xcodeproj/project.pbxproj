@@ -1,0 +1,1059 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18A778DA37B9732428D6236E /* Pods_NoteScheduleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E80F9CCE3702F96A49CB0F1E /* Pods_NoteScheduleTests.framework */; };
+		D2E2F2C8B76AD5397B2E44B0 /* Pods_NoteScheduleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE3C0DFFFE51AB2DA407929 /* Pods_NoteScheduleUITests.framework */; };
+		D5B0C8A53F80BFEAE9641E2E /* Pods_NoteSchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271A4A2BC4D908D605C064BD /* Pods_NoteSchedule.framework */; };
+		FB2D9E0121632933009BB827 /* NoteSchedule.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = FB2D9E0021632933009BB827 /* NoteSchedule.xcmappingmodel */; };
+		FB2D9E0521632CDB009BB827 /* DatePickerCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D9E0321632CDB009BB827 /* DatePickerCustomView.swift */; };
+		FB2D9E0621632CDB009BB827 /* DatePickerCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB2D9E0421632CDB009BB827 /* DatePickerCustomView.xib */; };
+		FB7D0FE021630A34009B8127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D0FDF21630A34009B8127 /* AppDelegate.swift */; };
+		FB7D0FE521630A34009B8127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7D0FE321630A34009B8127 /* Main.storyboard */; };
+		FB7D0FE721630A36009B8127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7D0FE621630A36009B8127 /* Assets.xcassets */; };
+		FB7D0FEA21630A36009B8127 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7D0FE821630A36009B8127 /* LaunchScreen.storyboard */; };
+		FB7D0FF521630A36009B8127 /* NoteScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D0FF421630A36009B8127 /* NoteScheduleTests.swift */; };
+		FB7D100021630A36009B8127 /* NoteScheduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D0FFF21630A36009B8127 /* NoteScheduleUITests.swift */; };
+		FB7D101321631EC5009B8127 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D100F21631EC4009B8127 /* ScheduleTableViewCell.swift */; };
+		FB7D101421631EC5009B8127 /* EditScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D101021631EC4009B8127 /* EditScheduleViewController.swift */; };
+		FB7D101521631EC5009B8127 /* NewScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D101121631EC4009B8127 /* NewScheduleViewController.swift */; };
+		FB7D101621631EC5009B8127 /* ScheduleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D101221631EC4009B8127 /* ScheduleListViewController.swift */; };
+		FB7D101821631ED7009B8127 /* OriginalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D101721631ED7009B8127 /* OriginalViewController.swift */; };
+		FB7D101B216321B9009B8127 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D101A216321B9009B8127 /* MainTabBarViewController.swift */; };
+		FB7D101D216321C6009B8127 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D101C216321C6009B8127 /* HomeViewController.swift */; };
+		FB7D105A21632765009B8127 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D102321632765009B8127 /* CounterView.swift */; };
+		FB7D105B21632765009B8127 /* LocalizeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D102421632765009B8127 /* LocalizeHelper.swift */; };
+		FB7D105C21632765009B8127 /* MBAutoGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7D102621632765009B8127 /* MBAutoGrowingTextView.m */; };
+		FB7D105D21632765009B8127 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D102821632765009B8127 /* BlurView.swift */; };
+		FB7D105E21632765009B8127 /* AVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D102A21632765009B8127 /* AVPlayer.swift */; };
+		FB7D105F21632765009B8127 /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D102B21632765009B8127 /* Bool.swift */; };
+		FB7D106021632765009B8127 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D102C21632765009B8127 /* CALayer.swift */; };
+		FB7D106121632765009B8127 /* CAShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D102D21632765009B8127 /* CAShapeLayer.swift */; };
+		FB7D106221632765009B8127 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D102E21632765009B8127 /* CGPoint.swift */; };
+		FB7D106321632765009B8127 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D102F21632765009B8127 /* CGRect.swift */; };
+		FB7D106421632765009B8127 /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D103021632765009B8127 /* CGSize.swift */; };
+		FB7D106521632765009B8127 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D103121632765009B8127 /* UIApplication.swift */; };
+		FB7D106621632765009B8127 /* UIBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D103221632765009B8127 /* UIBezierPath.swift */; };
+		FB7D106721632765009B8127 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D103321632765009B8127 /* UIButton.swift */; };
+		FB7D106821632765009B8127 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D103421632765009B8127 /* UIColor.swift */; };
+		FB7D106921632765009B8127 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D103521632765009B8127 /* UIImageView.swift */; };
+		FB7D106A21632765009B8127 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D103621632765009B8127 /* UIScreen.swift */; };
+		FB7D106B21632765009B8127 /* UISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D103721632765009B8127 /* UISlider.swift */; };
+		FB7D106C21632765009B8127 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D103821632765009B8127 /* UIView.swift */; };
+		FB7D106D21632765009B8127 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D103921632765009B8127 /* UIViewController.swift */; };
+		FB7D106E21632765009B8127 /* GalleryConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D103A21632765009B8127 /* GalleryConfiguration.swift */; };
+		FB7D106F21632765009B8127 /* GalleryDisplacedViewsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D103B21632765009B8127 /* GalleryDisplacedViewsDataSource.swift */; };
+		FB7D107021632765009B8127 /* GalleryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D103C21632765009B8127 /* GalleryItem.swift */; };
+		FB7D107121632765009B8127 /* GalleryItemsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D103D21632765009B8127 /* GalleryItemsDataSource.swift */; };
+		FB7D107221632765009B8127 /* GalleryItemsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D103E21632765009B8127 /* GalleryItemsDelegate.swift */; };
+		FB7D107321632765009B8127 /* GalleryPagingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D103F21632765009B8127 /* GalleryPagingDataSource.swift */; };
+		FB7D107421632765009B8127 /* GallerySwipeToDismissTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D104021632765009B8127 /* GallerySwipeToDismissTransition.swift */; };
+		FB7D107521632765009B8127 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D104121632765009B8127 /* GalleryViewController.swift */; };
+		FB7D107621632765009B8127 /* ImageFadeInHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D104221632765009B8127 /* ImageFadeInHandler.swift */; };
+		FB7D107721632765009B8127 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D104321632765009B8127 /* ImageViewController.swift */; };
+		FB7D107821632765009B8127 /* ItemBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D104421632765009B8127 /* ItemBaseController.swift */; };
+		FB7D107921632765009B8127 /* ItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D104521632765009B8127 /* ItemController.swift */; };
+		FB7D107A21632765009B8127 /* ItemControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D104621632765009B8127 /* ItemControllerDelegate.swift */; };
+		FB7D107B21632765009B8127 /* LayoutEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D104721632765009B8127 /* LayoutEnums.swift */; };
+		FB7D107C21632765009B8127 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D104821632765009B8127 /* Slider.swift */; };
+		FB7D107D21632765009B8127 /* ThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D104A21632765009B8127 /* ThumbnailCell.swift */; };
+		FB7D107E21632765009B8127 /* ThumbnailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D104B21632765009B8127 /* ThumbnailsViewController.swift */; };
+		FB7D107F21632765009B8127 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D104C21632765009B8127 /* UtilityFunctions.swift */; };
+		FB7D108021632765009B8127 /* VideoScrubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D104D21632765009B8127 /* VideoScrubber.swift */; };
+		FB7D108121632765009B8127 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D104E21632765009B8127 /* VideoView.swift */; };
+		FB7D108221632765009B8127 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D104F21632765009B8127 /* VideoViewController.swift */; };
+		FB7D108321632765009B8127 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D105021632765009B8127 /* Toast.swift */; };
+		FB7D108421632765009B8127 /* Mdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D105121632765009B8127 /* Mdate.swift */; };
+		FB7D108521632765009B8127 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D105221632765009B8127 /* NSObjectExtension.swift */; };
+		FB7D108621632765009B8127 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D105321632765009B8127 /* StringExtension.swift */; };
+		FB7D108721632765009B8127 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D105421632765009B8127 /* UIDeviceExtension.swift */; };
+		FB7D108821632765009B8127 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D105521632765009B8127 /* UILabelExtension.swift */; };
+		FB7D108921632765009B8127 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D105621632765009B8127 /* UIViewExtension.swift */; };
+		FB7D108A21632765009B8127 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D105721632765009B8127 /* Common.swift */; };
+		FB7D108B21632765009B8127 /* FirebaseAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D105821632765009B8127 /* FirebaseAction.swift */; };
+		FB7D108C21632765009B8127 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D105921632765009B8127 /* Define.swift */; };
+		FB7D1090216327C7009B8127 /* NoteSchedule.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB7D108E216327C7009B8127 /* NoteSchedule.xcdatamodeld */; };
+		FB7D10922163288D009B8127 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D10912163288D009B8127 /* DatabaseManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB7D0FF121630A36009B8127 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB7D0FD421630A34009B8127 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB7D0FDB21630A34009B8127;
+			remoteInfo = NoteSchedule;
+		};
+		FB7D0FFC21630A36009B8127 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB7D0FD421630A34009B8127 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB7D0FDB21630A34009B8127;
+			remoteInfo = NoteSchedule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		271A4A2BC4D908D605C064BD /* Pods_NoteSchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteSchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4858EF8DB8F052C04B60DC22 /* Pods-NoteSchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteSchedule.debug.xcconfig"; path = "Target Support Files/Pods-NoteSchedule/Pods-NoteSchedule.debug.xcconfig"; sourceTree = "<group>"; };
+		B5DA4A5027B6B72CF9F500AD /* Pods-NoteScheduleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteScheduleTests.debug.xcconfig"; path = "Target Support Files/Pods-NoteScheduleTests/Pods-NoteScheduleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF0918626C60AA4A9709B98F /* Pods-NoteSchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteSchedule.release.xcconfig"; path = "Target Support Files/Pods-NoteSchedule/Pods-NoteSchedule.release.xcconfig"; sourceTree = "<group>"; };
+		CD62D954ADD0366028726458 /* Pods-NoteScheduleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteScheduleTests.release.xcconfig"; path = "Target Support Files/Pods-NoteScheduleTests/Pods-NoteScheduleTests.release.xcconfig"; sourceTree = "<group>"; };
+		E80F9CCE3702F96A49CB0F1E /* Pods_NoteScheduleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteScheduleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E98B33F04D681F39295E84AF /* Pods-NoteScheduleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteScheduleUITests.release.xcconfig"; path = "Target Support Files/Pods-NoteScheduleUITests/Pods-NoteScheduleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F7F6A06A11B08F5E5276BB84 /* Pods-NoteScheduleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteScheduleUITests.debug.xcconfig"; path = "Target Support Files/Pods-NoteScheduleUITests/Pods-NoteScheduleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB2D9E0021632933009BB827 /* NoteSchedule.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = NoteSchedule.xcmappingmodel; sourceTree = "<group>"; };
+		FB2D9E0321632CDB009BB827 /* DatePickerCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerCustomView.swift; sourceTree = "<group>"; };
+		FB2D9E0421632CDB009BB827 /* DatePickerCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerCustomView.xib; sourceTree = "<group>"; };
+		FB7D0FDC21630A34009B8127 /* NoteSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7D0FDF21630A34009B8127 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB7D0FE421630A34009B8127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB7D0FE621630A36009B8127 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB7D0FE921630A36009B8127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB7D0FEB21630A36009B8127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB7D0FF021630A36009B8127 /* NoteScheduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteScheduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7D0FF421630A36009B8127 /* NoteScheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteScheduleTests.swift; sourceTree = "<group>"; };
+		FB7D0FF621630A36009B8127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB7D0FFB21630A36009B8127 /* NoteScheduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteScheduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7D0FFF21630A36009B8127 /* NoteScheduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteScheduleUITests.swift; sourceTree = "<group>"; };
+		FB7D100121630A36009B8127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB7D100F21631EC4009B8127 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		FB7D101021631EC4009B8127 /* EditScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditScheduleViewController.swift; sourceTree = "<group>"; };
+		FB7D101121631EC4009B8127 /* NewScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewScheduleViewController.swift; sourceTree = "<group>"; };
+		FB7D101221631EC4009B8127 /* ScheduleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleListViewController.swift; sourceTree = "<group>"; };
+		FB7D101721631ED7009B8127 /* OriginalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginalViewController.swift; sourceTree = "<group>"; };
+		FB7D101A216321B9009B8127 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		FB7D101C216321C6009B8127 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FB7D102321632765009B8127 /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		FB7D102421632765009B8127 /* LocalizeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizeHelper.swift; sourceTree = "<group>"; };
+		FB7D102521632765009B8127 /* MBAutoGrowingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAutoGrowingTextView.h; sourceTree = "<group>"; };
+		FB7D102621632765009B8127 /* MBAutoGrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAutoGrowingTextView.m; sourceTree = "<group>"; };
+		FB7D102821632765009B8127 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		FB7D102A21632765009B8127 /* AVPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayer.swift; sourceTree = "<group>"; };
+		FB7D102B21632765009B8127 /* Bool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
+		FB7D102C21632765009B8127 /* CALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
+		FB7D102D21632765009B8127 /* CAShapeLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAShapeLayer.swift; sourceTree = "<group>"; };
+		FB7D102E21632765009B8127 /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
+		FB7D102F21632765009B8127 /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		FB7D103021632765009B8127 /* CGSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
+		FB7D103121632765009B8127 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		FB7D103221632765009B8127 /* UIBezierPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBezierPath.swift; sourceTree = "<group>"; };
+		FB7D103321632765009B8127 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		FB7D103421632765009B8127 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		FB7D103521632765009B8127 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		FB7D103621632765009B8127 /* UIScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		FB7D103721632765009B8127 /* UISlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISlider.swift; sourceTree = "<group>"; };
+		FB7D103821632765009B8127 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		FB7D103921632765009B8127 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		FB7D103A21632765009B8127 /* GalleryConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryConfiguration.swift; sourceTree = "<group>"; };
+		FB7D103B21632765009B8127 /* GalleryDisplacedViewsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryDisplacedViewsDataSource.swift; sourceTree = "<group>"; };
+		FB7D103C21632765009B8127 /* GalleryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryItem.swift; sourceTree = "<group>"; };
+		FB7D103D21632765009B8127 /* GalleryItemsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryItemsDataSource.swift; sourceTree = "<group>"; };
+		FB7D103E21632765009B8127 /* GalleryItemsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryItemsDelegate.swift; sourceTree = "<group>"; };
+		FB7D103F21632765009B8127 /* GalleryPagingDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryPagingDataSource.swift; sourceTree = "<group>"; };
+		FB7D104021632765009B8127 /* GallerySwipeToDismissTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GallerySwipeToDismissTransition.swift; sourceTree = "<group>"; };
+		FB7D104121632765009B8127 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		FB7D104221632765009B8127 /* ImageFadeInHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFadeInHandler.swift; sourceTree = "<group>"; };
+		FB7D104321632765009B8127 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		FB7D104421632765009B8127 /* ItemBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemBaseController.swift; sourceTree = "<group>"; };
+		FB7D104521632765009B8127 /* ItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemController.swift; sourceTree = "<group>"; };
+		FB7D104621632765009B8127 /* ItemControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemControllerDelegate.swift; sourceTree = "<group>"; };
+		FB7D104721632765009B8127 /* LayoutEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutEnums.swift; sourceTree = "<group>"; };
+		FB7D104821632765009B8127 /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		FB7D104A21632765009B8127 /* ThumbnailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailCell.swift; sourceTree = "<group>"; };
+		FB7D104B21632765009B8127 /* ThumbnailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailsViewController.swift; sourceTree = "<group>"; };
+		FB7D104C21632765009B8127 /* UtilityFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
+		FB7D104D21632765009B8127 /* VideoScrubber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoScrubber.swift; sourceTree = "<group>"; };
+		FB7D104E21632765009B8127 /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		FB7D104F21632765009B8127 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		FB7D105021632765009B8127 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		FB7D105121632765009B8127 /* Mdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mdate.swift; sourceTree = "<group>"; };
+		FB7D105221632765009B8127 /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		FB7D105321632765009B8127 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		FB7D105421632765009B8127 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		FB7D105521632765009B8127 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		FB7D105621632765009B8127 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		FB7D105721632765009B8127 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		FB7D105821632765009B8127 /* FirebaseAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAction.swift; sourceTree = "<group>"; };
+		FB7D105921632765009B8127 /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		FB7D108F216327C7009B8127 /* NoteSchedule.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteSchedule.xcdatamodel; sourceTree = "<group>"; };
+		FB7D10912163288D009B8127 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		FBE3C0DFFFE51AB2DA407929 /* Pods_NoteScheduleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteScheduleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB7D0FD921630A34009B8127 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B0C8A53F80BFEAE9641E2E /* Pods_NoteSchedule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB7D0FED21630A36009B8127 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A778DA37B9732428D6236E /* Pods_NoteScheduleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB7D0FF821630A36009B8127 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2E2F2C8B76AD5397B2E44B0 /* Pods_NoteScheduleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B96C1B121D6066B07AF0C95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				271A4A2BC4D908D605C064BD /* Pods_NoteSchedule.framework */,
+				E80F9CCE3702F96A49CB0F1E /* Pods_NoteScheduleTests.framework */,
+				FBE3C0DFFFE51AB2DA407929 /* Pods_NoteScheduleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB2D9E0221632CCA009BB827 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				FB2D9E0321632CDB009BB827 /* DatePickerCustomView.swift */,
+				FB2D9E0421632CDB009BB827 /* DatePickerCustomView.xib */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		FB7D0FD321630A34009B8127 = {
+			isa = PBXGroup;
+			children = (
+				FB7D0FDE21630A34009B8127 /* NoteSchedule */,
+				FB7D0FF321630A36009B8127 /* NoteScheduleTests */,
+				FB7D0FFE21630A36009B8127 /* NoteScheduleUITests */,
+				FB7D0FDD21630A34009B8127 /* Products */,
+				FF3B6024F73E6A0D7152C1FF /* Pods */,
+				2B96C1B121D6066B07AF0C95 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FB7D0FDD21630A34009B8127 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D0FDC21630A34009B8127 /* NoteSchedule.app */,
+				FB7D0FF021630A36009B8127 /* NoteScheduleTests.xctest */,
+				FB7D0FFB21630A36009B8127 /* NoteScheduleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB7D0FDE21630A34009B8127 /* NoteSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D0FDF21630A34009B8127 /* AppDelegate.swift */,
+				FB7D101C216321C6009B8127 /* HomeViewController.swift */,
+				FB7D101721631ED7009B8127 /* OriginalViewController.swift */,
+				FB7D108D2163278C009B8127 /* Database */,
+				FB7D10202163274A009B8127 /* Common */,
+				FB7D101F216321DF009B8127 /* Configuration */,
+				FB7D101E216321CE009B8127 /* Storyboard */,
+				FB7D1019216321B9009B8127 /* TabBar */,
+				FB7D100D21631EC4009B8127 /* Calendar */,
+			);
+			path = NoteSchedule;
+			sourceTree = "<group>";
+		};
+		FB7D0FF321630A36009B8127 /* NoteScheduleTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D0FF421630A36009B8127 /* NoteScheduleTests.swift */,
+				FB7D0FF621630A36009B8127 /* Info.plist */,
+			);
+			path = NoteScheduleTests;
+			sourceTree = "<group>";
+		};
+		FB7D0FFE21630A36009B8127 /* NoteScheduleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D0FFF21630A36009B8127 /* NoteScheduleUITests.swift */,
+				FB7D100121630A36009B8127 /* Info.plist */,
+			);
+			path = NoteScheduleUITests;
+			sourceTree = "<group>";
+		};
+		FB7D100D21631EC4009B8127 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D100E21631EC4009B8127 /* Cell */,
+				FB7D101021631EC4009B8127 /* EditScheduleViewController.swift */,
+				FB7D101121631EC4009B8127 /* NewScheduleViewController.swift */,
+				FB7D101221631EC4009B8127 /* ScheduleListViewController.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		FB7D100E21631EC4009B8127 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D100F21631EC4009B8127 /* ScheduleTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FB7D1019216321B9009B8127 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D101A216321B9009B8127 /* MainTabBarViewController.swift */,
+			);
+			name = TabBar;
+			path = NoteSchedule/TabBar;
+			sourceTree = SOURCE_ROOT;
+		};
+		FB7D101E216321CE009B8127 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D0FE821630A36009B8127 /* LaunchScreen.storyboard */,
+				FB7D0FE321630A34009B8127 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FB7D101F216321DF009B8127 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D0FEB21630A36009B8127 /* Info.plist */,
+				FB7D0FE621630A36009B8127 /* Assets.xcassets */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		FB7D10202163274A009B8127 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D105921632765009B8127 /* Define.swift */,
+				FB7D105721632765009B8127 /* Common.swift */,
+				FB7D105821632765009B8127 /* FirebaseAction.swift */,
+				FB7D102221632765009B8127 /* Library */,
+				FB2D9E0221632CCA009BB827 /* CustomView */,
+				FB7D102121632765009B8127 /* Extension */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FB7D102121632765009B8127 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D105121632765009B8127 /* Mdate.swift */,
+				FB7D105221632765009B8127 /* NSObjectExtension.swift */,
+				FB7D105321632765009B8127 /* StringExtension.swift */,
+				FB7D105421632765009B8127 /* UIDeviceExtension.swift */,
+				FB7D105521632765009B8127 /* UILabelExtension.swift */,
+				FB7D105621632765009B8127 /* UIViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FB7D102221632765009B8127 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D102321632765009B8127 /* CounterView.swift */,
+				FB7D102421632765009B8127 /* LocalizeHelper.swift */,
+				FB7D102521632765009B8127 /* MBAutoGrowingTextView.h */,
+				FB7D102621632765009B8127 /* MBAutoGrowingTextView.m */,
+				FB7D102721632765009B8127 /* Source */,
+				FB7D105021632765009B8127 /* Toast.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		FB7D102721632765009B8127 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D102821632765009B8127 /* BlurView.swift */,
+				FB7D102921632765009B8127 /* Extensions */,
+				FB7D103A21632765009B8127 /* GalleryConfiguration.swift */,
+				FB7D103B21632765009B8127 /* GalleryDisplacedViewsDataSource.swift */,
+				FB7D103C21632765009B8127 /* GalleryItem.swift */,
+				FB7D103D21632765009B8127 /* GalleryItemsDataSource.swift */,
+				FB7D103E21632765009B8127 /* GalleryItemsDelegate.swift */,
+				FB7D103F21632765009B8127 /* GalleryPagingDataSource.swift */,
+				FB7D104021632765009B8127 /* GallerySwipeToDismissTransition.swift */,
+				FB7D104121632765009B8127 /* GalleryViewController.swift */,
+				FB7D104221632765009B8127 /* ImageFadeInHandler.swift */,
+				FB7D104321632765009B8127 /* ImageViewController.swift */,
+				FB7D104421632765009B8127 /* ItemBaseController.swift */,
+				FB7D104521632765009B8127 /* ItemController.swift */,
+				FB7D104621632765009B8127 /* ItemControllerDelegate.swift */,
+				FB7D104721632765009B8127 /* LayoutEnums.swift */,
+				FB7D104821632765009B8127 /* Slider.swift */,
+				FB7D104921632765009B8127 /* Thumbnails Controller */,
+				FB7D104C21632765009B8127 /* UtilityFunctions.swift */,
+				FB7D104D21632765009B8127 /* VideoScrubber.swift */,
+				FB7D104E21632765009B8127 /* VideoView.swift */,
+				FB7D104F21632765009B8127 /* VideoViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		FB7D102921632765009B8127 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D102A21632765009B8127 /* AVPlayer.swift */,
+				FB7D102B21632765009B8127 /* Bool.swift */,
+				FB7D102C21632765009B8127 /* CALayer.swift */,
+				FB7D102D21632765009B8127 /* CAShapeLayer.swift */,
+				FB7D102E21632765009B8127 /* CGPoint.swift */,
+				FB7D102F21632765009B8127 /* CGRect.swift */,
+				FB7D103021632765009B8127 /* CGSize.swift */,
+				FB7D103121632765009B8127 /* UIApplication.swift */,
+				FB7D103221632765009B8127 /* UIBezierPath.swift */,
+				FB7D103321632765009B8127 /* UIButton.swift */,
+				FB7D103421632765009B8127 /* UIColor.swift */,
+				FB7D103521632765009B8127 /* UIImageView.swift */,
+				FB7D103621632765009B8127 /* UIScreen.swift */,
+				FB7D103721632765009B8127 /* UISlider.swift */,
+				FB7D103821632765009B8127 /* UIView.swift */,
+				FB7D103921632765009B8127 /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FB7D104921632765009B8127 /* Thumbnails Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D104A21632765009B8127 /* ThumbnailCell.swift */,
+				FB7D104B21632765009B8127 /* ThumbnailsViewController.swift */,
+			);
+			path = "Thumbnails Controller";
+			sourceTree = "<group>";
+		};
+		FB7D108D2163278C009B8127 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D10912163288D009B8127 /* DatabaseManager.swift */,
+				FB2D9E0021632933009BB827 /* NoteSchedule.xcmappingmodel */,
+				FB7D108E216327C7009B8127 /* NoteSchedule.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		FF3B6024F73E6A0D7152C1FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4858EF8DB8F052C04B60DC22 /* Pods-NoteSchedule.debug.xcconfig */,
+				BF0918626C60AA4A9709B98F /* Pods-NoteSchedule.release.xcconfig */,
+				B5DA4A5027B6B72CF9F500AD /* Pods-NoteScheduleTests.debug.xcconfig */,
+				CD62D954ADD0366028726458 /* Pods-NoteScheduleTests.release.xcconfig */,
+				F7F6A06A11B08F5E5276BB84 /* Pods-NoteScheduleUITests.debug.xcconfig */,
+				E98B33F04D681F39295E84AF /* Pods-NoteScheduleUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB7D0FDB21630A34009B8127 /* NoteSchedule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB7D100421630A36009B8127 /* Build configuration list for PBXNativeTarget "NoteSchedule" */;
+			buildPhases = (
+				EA2F91763BF09EF2A412185B /* [CP] Check Pods Manifest.lock */,
+				FB7D0FD821630A34009B8127 /* Sources */,
+				FB7D0FD921630A34009B8127 /* Frameworks */,
+				FB7D0FDA21630A34009B8127 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoteSchedule;
+			productName = NoteSchedule;
+			productReference = FB7D0FDC21630A34009B8127 /* NoteSchedule.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB7D0FEF21630A36009B8127 /* NoteScheduleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB7D100721630A36009B8127 /* Build configuration list for PBXNativeTarget "NoteScheduleTests" */;
+			buildPhases = (
+				658D33311B22F4315F3EFF93 /* [CP] Check Pods Manifest.lock */,
+				FB7D0FEC21630A36009B8127 /* Sources */,
+				FB7D0FED21630A36009B8127 /* Frameworks */,
+				FB7D0FEE21630A36009B8127 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB7D0FF221630A36009B8127 /* PBXTargetDependency */,
+			);
+			name = NoteScheduleTests;
+			productName = NoteScheduleTests;
+			productReference = FB7D0FF021630A36009B8127 /* NoteScheduleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB7D0FFA21630A36009B8127 /* NoteScheduleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB7D100A21630A36009B8127 /* Build configuration list for PBXNativeTarget "NoteScheduleUITests" */;
+			buildPhases = (
+				DD27B5E2C6D27E1C3079A8DF /* [CP] Check Pods Manifest.lock */,
+				FB7D0FF721630A36009B8127 /* Sources */,
+				FB7D0FF821630A36009B8127 /* Frameworks */,
+				FB7D0FF921630A36009B8127 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB7D0FFD21630A36009B8127 /* PBXTargetDependency */,
+			);
+			name = NoteScheduleUITests;
+			productName = NoteScheduleUITests;
+			productReference = FB7D0FFB21630A36009B8127 /* NoteScheduleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB7D0FD421630A34009B8127 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Hai Dang";
+				TargetAttributes = {
+					FB7D0FDB21630A34009B8127 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					FB7D0FEF21630A36009B8127 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = FB7D0FDB21630A34009B8127;
+					};
+					FB7D0FFA21630A36009B8127 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = FB7D0FDB21630A34009B8127;
+					};
+				};
+			};
+			buildConfigurationList = FB7D0FD721630A34009B8127 /* Build configuration list for PBXProject "NoteSchedule" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB7D0FD321630A34009B8127;
+			productRefGroup = FB7D0FDD21630A34009B8127 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB7D0FDB21630A34009B8127 /* NoteSchedule */,
+				FB7D0FEF21630A36009B8127 /* NoteScheduleTests */,
+				FB7D0FFA21630A36009B8127 /* NoteScheduleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB7D0FDA21630A34009B8127 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7D0FEA21630A36009B8127 /* LaunchScreen.storyboard in Resources */,
+				FB7D0FE721630A36009B8127 /* Assets.xcassets in Resources */,
+				FB7D0FE521630A34009B8127 /* Main.storyboard in Resources */,
+				FB2D9E0621632CDB009BB827 /* DatePickerCustomView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB7D0FEE21630A36009B8127 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB7D0FF921630A36009B8127 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		658D33311B22F4315F3EFF93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoteScheduleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD27B5E2C6D27E1C3079A8DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoteScheduleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA2F91763BF09EF2A412185B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoteSchedule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB7D0FD821630A34009B8127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7D101821631ED7009B8127 /* OriginalViewController.swift in Sources */,
+				FB7D101621631EC5009B8127 /* ScheduleListViewController.swift in Sources */,
+				FB7D107021632765009B8127 /* GalleryItem.swift in Sources */,
+				FB7D108C21632765009B8127 /* Define.swift in Sources */,
+				FB7D107321632765009B8127 /* GalleryPagingDataSource.swift in Sources */,
+				FB7D0FE021630A34009B8127 /* AppDelegate.swift in Sources */,
+				FB7D101D216321C6009B8127 /* HomeViewController.swift in Sources */,
+				FB7D105C21632765009B8127 /* MBAutoGrowingTextView.m in Sources */,
+				FB7D106E21632765009B8127 /* GalleryConfiguration.swift in Sources */,
+				FB7D108B21632765009B8127 /* FirebaseAction.swift in Sources */,
+				FB7D105D21632765009B8127 /* BlurView.swift in Sources */,
+				FB7D106621632765009B8127 /* UIBezierPath.swift in Sources */,
+				FB7D106C21632765009B8127 /* UIView.swift in Sources */,
+				FB7D101B216321B9009B8127 /* MainTabBarViewController.swift in Sources */,
+				FB7D10922163288D009B8127 /* DatabaseManager.swift in Sources */,
+				FB7D108121632765009B8127 /* VideoView.swift in Sources */,
+				FB7D106321632765009B8127 /* CGRect.swift in Sources */,
+				FB7D107621632765009B8127 /* ImageFadeInHandler.swift in Sources */,
+				FB7D106521632765009B8127 /* UIApplication.swift in Sources */,
+				FB7D107E21632765009B8127 /* ThumbnailsViewController.swift in Sources */,
+				FB7D107221632765009B8127 /* GalleryItemsDelegate.swift in Sources */,
+				FB7D1090216327C7009B8127 /* NoteSchedule.xcdatamodeld in Sources */,
+				FB7D108421632765009B8127 /* Mdate.swift in Sources */,
+				FB7D107721632765009B8127 /* ImageViewController.swift in Sources */,
+				FB7D106821632765009B8127 /* UIColor.swift in Sources */,
+				FB7D108021632765009B8127 /* VideoScrubber.swift in Sources */,
+				FB7D107921632765009B8127 /* ItemController.swift in Sources */,
+				FB7D101421631EC5009B8127 /* EditScheduleViewController.swift in Sources */,
+				FB2D9E0121632933009BB827 /* NoteSchedule.xcmappingmodel in Sources */,
+				FB7D107421632765009B8127 /* GallerySwipeToDismissTransition.swift in Sources */,
+				FB7D106F21632765009B8127 /* GalleryDisplacedViewsDataSource.swift in Sources */,
+				FB7D106B21632765009B8127 /* UISlider.swift in Sources */,
+				FB7D106D21632765009B8127 /* UIViewController.swift in Sources */,
+				FB7D101521631EC5009B8127 /* NewScheduleViewController.swift in Sources */,
+				FB7D106021632765009B8127 /* CALayer.swift in Sources */,
+				FB7D107121632765009B8127 /* GalleryItemsDataSource.swift in Sources */,
+				FB7D107821632765009B8127 /* ItemBaseController.swift in Sources */,
+				FB7D101321631EC5009B8127 /* ScheduleTableViewCell.swift in Sources */,
+				FB7D105B21632765009B8127 /* LocalizeHelper.swift in Sources */,
+				FB7D108A21632765009B8127 /* Common.swift in Sources */,
+				FB7D107D21632765009B8127 /* ThumbnailCell.swift in Sources */,
+				FB7D106921632765009B8127 /* UIImageView.swift in Sources */,
+				FB7D105E21632765009B8127 /* AVPlayer.swift in Sources */,
+				FB7D106221632765009B8127 /* CGPoint.swift in Sources */,
+				FB7D105A21632765009B8127 /* CounterView.swift in Sources */,
+				FB7D108721632765009B8127 /* UIDeviceExtension.swift in Sources */,
+				FB7D108521632765009B8127 /* NSObjectExtension.swift in Sources */,
+				FB7D105F21632765009B8127 /* Bool.swift in Sources */,
+				FB7D108821632765009B8127 /* UILabelExtension.swift in Sources */,
+				FB7D106721632765009B8127 /* UIButton.swift in Sources */,
+				FB7D107B21632765009B8127 /* LayoutEnums.swift in Sources */,
+				FB7D106121632765009B8127 /* CAShapeLayer.swift in Sources */,
+				FB7D108921632765009B8127 /* UIViewExtension.swift in Sources */,
+				FB7D107F21632765009B8127 /* UtilityFunctions.swift in Sources */,
+				FB7D108221632765009B8127 /* VideoViewController.swift in Sources */,
+				FB2D9E0521632CDB009BB827 /* DatePickerCustomView.swift in Sources */,
+				FB7D107521632765009B8127 /* GalleryViewController.swift in Sources */,
+				FB7D107C21632765009B8127 /* Slider.swift in Sources */,
+				FB7D108621632765009B8127 /* StringExtension.swift in Sources */,
+				FB7D106421632765009B8127 /* CGSize.swift in Sources */,
+				FB7D108321632765009B8127 /* Toast.swift in Sources */,
+				FB7D106A21632765009B8127 /* UIScreen.swift in Sources */,
+				FB7D107A21632765009B8127 /* ItemControllerDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB7D0FEC21630A36009B8127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7D0FF521630A36009B8127 /* NoteScheduleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB7D0FF721630A36009B8127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7D100021630A36009B8127 /* NoteScheduleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB7D0FF221630A36009B8127 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB7D0FDB21630A34009B8127 /* NoteSchedule */;
+			targetProxy = FB7D0FF121630A36009B8127 /* PBXContainerItemProxy */;
+		};
+		FB7D0FFD21630A36009B8127 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB7D0FDB21630A34009B8127 /* NoteSchedule */;
+			targetProxy = FB7D0FFC21630A36009B8127 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB7D0FE321630A34009B8127 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB7D0FE421630A34009B8127 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB7D0FE821630A36009B8127 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB7D0FE921630A36009B8127 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB7D100221630A36009B8127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB7D100321630A36009B8127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB7D100521630A36009B8127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4858EF8DB8F052C04B60DC22 /* Pods-NoteSchedule.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RT689AHQ26;
+				INFOPLIST_FILE = "$(SRCROOT)/NoteSchedule/Configuration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Beacon.NoteSchedule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB7D100621630A36009B8127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF0918626C60AA4A9709B98F /* Pods-NoteSchedule.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RT689AHQ26;
+				INFOPLIST_FILE = "$(SRCROOT)/NoteSchedule/Configuration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Beacon.NoteSchedule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB7D100821630A36009B8127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5DA4A5027B6B72CF9F500AD /* Pods-NoteScheduleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoteScheduleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Beacon.NoteScheduleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteSchedule.app/NoteSchedule";
+			};
+			name = Debug;
+		};
+		FB7D100921630A36009B8127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD62D954ADD0366028726458 /* Pods-NoteScheduleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoteScheduleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Beacon.NoteScheduleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteSchedule.app/NoteSchedule";
+			};
+			name = Release;
+		};
+		FB7D100B21630A36009B8127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F6A06A11B08F5E5276BB84 /* Pods-NoteScheduleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoteScheduleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Beacon.NoteScheduleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NoteSchedule;
+			};
+			name = Debug;
+		};
+		FB7D100C21630A36009B8127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E98B33F04D681F39295E84AF /* Pods-NoteScheduleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoteScheduleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Beacon.NoteScheduleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NoteSchedule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB7D0FD721630A34009B8127 /* Build configuration list for PBXProject "NoteSchedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB7D100221630A36009B8127 /* Debug */,
+				FB7D100321630A36009B8127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB7D100421630A36009B8127 /* Build configuration list for PBXNativeTarget "NoteSchedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB7D100521630A36009B8127 /* Debug */,
+				FB7D100621630A36009B8127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB7D100721630A36009B8127 /* Build configuration list for PBXNativeTarget "NoteScheduleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB7D100821630A36009B8127 /* Debug */,
+				FB7D100921630A36009B8127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB7D100A21630A36009B8127 /* Build configuration list for PBXNativeTarget "NoteScheduleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB7D100B21630A36009B8127 /* Debug */,
+				FB7D100C21630A36009B8127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FB7D108E216327C7009B8127 /* NoteSchedule.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FB7D108F216327C7009B8127 /* NoteSchedule.xcdatamodel */,
+			);
+			currentVersion = FB7D108F216327C7009B8127 /* NoteSchedule.xcdatamodel */;
+			path = NoteSchedule.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FB7D0FD421630A34009B8127 /* Project object */;
+}
