@@ -1,9 +1,12 @@
 PODS:
-  - Crashlytics (3.10.7):
-    - Fabric (~> 1.7.11)
-  - Fabric (1.7.11)
+  - Crashlytics (3.10.8):
+    - Fabric (~> 1.7.12)
+  - Fabric (1.7.12)
   - Firebase (5.9.0):
     - Firebase/Core (= 5.9.0)
+  - Firebase/AdMob (5.9.0):
+    - Firebase/Core
+    - Google-Mobile-Ads-SDK (~> 7.33)
   - Firebase/Core (5.9.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.2.0)
@@ -30,6 +33,7 @@ PODS:
     - FirebaseCore (~> 5.1)
     - GoogleUtilities/Environment (~> 5.3)
     - GoogleUtilities/UserDefaults (~> 5.3)
+  - Google-Mobile-Ads-SDK (7.34.0)
   - GoogleAppMeasurement (5.2.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
     - GoogleUtilities/MethodSwizzler (~> 5.2)
@@ -68,6 +72,7 @@ DEPENDENCIES:
   - Crashlytics (~> 3.10.1)
   - Fabric (~> 1.7.5)
   - Firebase (>= 2.5.0)
+  - Firebase/AdMob
   - Firebase/Core
   - Firebase/Database
   - MagicalRecord
@@ -81,6 +86,7 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseDatabase
     - FirebaseInstanceID
+    - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleUtilities
     - leveldb-library
@@ -88,19 +94,20 @@ SPEC REPOS:
     - nanopb
 
 SPEC CHECKSUMS:
-  Crashlytics: ccaac42660eb9351b9960c0d66106b0bcf99f4fa
-  Fabric: f233c9492b3bbc1f04e3882986740f7988a58edb
+  Crashlytics: 058dc1ba579f6c100bc60a6878703779bff383c4
+  Fabric: d7387db9a31aadff63b147a4b91d982c53afaa4f
   Firebase: 383fa29aca93e371cab776b48a5c66544d3c2003
   FirebaseAnalytics: 831f1f127f4a75698e9875a87bf7e2668730d953
   FirebaseCore: 2a84b6b325792a4319ef71ee18819dcba08d2fd7
   FirebaseDatabase: e2bcbc106adc4b11a2da3ec2eb63c0c4a44f2f54
   FirebaseInstanceID: 78ba376fcd5b94c001f9999b2cbd3d1f1e56e78d
+  Google-Mobile-Ads-SDK: a1cbce28c0c78ca1fb0b6c4f213485f55527c99f
   GoogleAppMeasurement: 2b3a023a61239c8d002e6e4fcf4abce8eddce0e0
   GoogleUtilities: 760ccb53b7c7f40f9c02d8c241f76f841a7a6162
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: af36db04c7fbad3887289c7e1cbe1a25a3aa82cf
+PODFILE CHECKSUM: cb19cd4ba2f7b91b3d4fddf05bed4eb74144b03e
 
 COCOAPODS: 1.6.0.beta.1
