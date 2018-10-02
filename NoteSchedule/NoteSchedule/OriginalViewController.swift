@@ -27,7 +27,7 @@ class OriginalViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         view.endEditing(true)
         DispatchQueue.global(qos: .background).async {
-            app_delegate.firebaseObject.updateNickName(isTheFirst: false)
+            app_delegate.firebaseObject.updateNickName()
         }
     }
     

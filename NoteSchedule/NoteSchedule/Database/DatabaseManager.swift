@@ -40,6 +40,10 @@ class DatabaseManager: NSObject {
                 schedule!.isAlarm = isAlarm as! Bool
             }
             
+            if let isSync = scheduleDict["isSync"] {
+                schedule!.isSync = isSync as! Bool
+            }
+            
         }, completion: {(isCompletion,error) in
             onCompletionHandler()
         })
@@ -69,6 +73,19 @@ class DatabaseManager: NSObject {
         let predicate = NSPredicate(format: "id = %@",id)
         let schedule = Schedule.mr_findFirst(with: predicate, in: currentContext!)
         return schedule
+    }
+    
+    static func getNotYetSyncSchedule(context: NSManagedObjectContext?) -> [Schedule] {
+        let currentContext: NSManagedObjectContext?
+        
+        if context == nil {
+            currentContext = NSManagedObjectContext.mr_default()
+        } else {
+            currentContext = context
+        }
+        let predicate = NSPredicate(format: "isSync = false")
+        let scheduleArray = Schedule.mr_findAll(with: predicate, in: currentContext!)
+        return scheduleArray != nil ? scheduleArray as! [Schedule] : [Schedule]()
     }
     
     static func getAllSchedule(context: NSManagedObjectContext?) -> [Schedule] {

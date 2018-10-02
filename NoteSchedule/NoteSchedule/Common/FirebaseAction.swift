@@ -35,57 +35,37 @@ class FirebaseAction: NSObject {
     }
     
     //MARK: - USERS
-    func updateNickName(isTheFirst: Bool) {
+    func updateNickName() {
         // Get current time on server
-//        let serverTimestamp = ServerValue.timestamp()
-
-        // Baby name
-        //        var babyName = "Ẩn danh"
-        //        if UserDefaults.standard.object(forKey: "babyName") != nil {
-        //            babyName = UserDefaults.standard.object(forKey: "babyName") as! String
-        //        }
+        let serverTimestamp = ServerValue.timestamp()
 
         // Mother name
-        var motherName = "Ẩn danh"
-        if UserDefaults.standard.object(forKey: "motherName") != nil {
-            motherName = UserDefaults.standard.object(forKey: "motherName") as! String
+        var name = "Ẩn danh"
+        if UserDefaults.standard.object(forKey: "name") != nil {
+            name = UserDefaults.standard.object(forKey: "name") as! String
         }
         
         var resultRef: DatabaseReference = Database.database().reference()
         resultRef = ref.child("users")
         
-//        if isTheFirst {
-//         resultRef.child((UIDevice.current.identifierForVendor?.uuidString)!).setValue(["lastOnline": serverTimestamp, "createTime": serverTimestamp, "name": motherName, "baby": babyName, "appVersion": Common.getAppVersion(), "id": (UIDevice.current.identifierForVendor?.uuidString)!])
-//
-//        } else {
-//         resultRef.child((UIDevice.current.identifierForVendor?.uuidString)!).child("lastOnline").setValue(serverTimestamp)
-//        resultRef.child((UIDevice.current.identifierForVendor?.uuidString)!).child("name").setValue(motherName)
-//        resultRef.child((UIDevice.current.identifierForVendor?.uuidString)!).child("baby").setValue(babyName)
-//        resultRef.child((UIDevice.current.identifierForVendor?.uuidString)!).child("appVersion").setValue(Common.getAppVersion())
-//
-//        resultRef.child((UIDevice.current.identifierForVendor?.uuidString)!).child("id").setValue((UIDevice.current.identifierForVendor?.uuidString)!)
-//        }
-        resultRef.child((UIDevice.current.identifierForVendor?.uuidString)!).setValue(motherName)
+    resultRef.child((UIDevice.current.identifierForVendor?.uuidString)!).child("lastOnline").setValue(serverTimestamp)
+        resultRef.child((UIDevice.current.identifierForVendor?.uuidString)!).child("name").setValue(name)
+    resultRef.child((UIDevice.current.identifierForVendor?.uuidString)!).child("appVersion").setValue(Common.getAppVersion())
+        resultRef.child((UIDevice.current.identifierForVendor?.uuidString)!).child("id").setValue((UIDevice.current.identifierForVendor?.uuidString)!)
+        
     }
     
-    func getUser(max: NSInteger, onCompletionHandler: @escaping ([String : String]) -> ()) {
-//        let lastGetUser = UserDefaults.standard.object(forKey: "lastgetUser") ?? 0.0
-//        ref.child("users").queryOrdered(byChild: "createTime").queryStarting(atValue: lastGetUser).queryLimited(toLast: UInt(max)).observe(.value, with: { (snapshot) in
-//            let snapDict = snapshot.value as? [String : [String: AnyObject]] ?? [String : [String: AnyObject]]()
-//
-//            // Update last time get user list
-//            let lastKey         = snapDict.keys[snapDict.keys.endIndex]
-//            let lastDict        = snapDict[lastKey]
-//            let lastCreateTime  = lastDict?["createTime"] ?? 0.0 as AnyObject
-//            UserDefaults.standard.set(lastCreateTime, forKey: "lastgetUser")
-//
-//            onCompletionHandler(snapDict)
-//        })
-        
+    func getUser(max: NSInteger, onCompletionHandler: @escaping ([String : [String: AnyObject]]) -> ()) {
         ref.child("users").queryLimited(toLast: UInt(max)).observe(.value, with: { (snapshot) in
-            let snapDict = snapshot.value as? [String : String] ?? [:]
-            
+            let snapDict = snapshot.value as? [String : [String: AnyObject]] ?? [String : [String: AnyObject]]()
             onCompletionHandler(snapDict)
+        })
+    }
+    
+    func sync() {
+        let scheduleArray = DatabaseManager.getNotYetSyncSchedule(context: nil)
+        scheduleArray.forEach({schedule in
+            
         })
     }
     
