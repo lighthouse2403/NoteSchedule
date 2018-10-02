@@ -31,7 +31,6 @@ class ScheduleListViewController: OriginalViewController, UITableViewDataSource,
     // MARK: - Setup UI
     
     func setupNavigationBar() {
-        self.addLeftBarItem(imageName: "back", title: "")
         self.addRightBarItem(imageName: "add", imageTouch: "", title: "")
         self.customTitle(title: "Lập kế hoạch")
     }
@@ -41,10 +40,6 @@ class ScheduleListViewController: OriginalViewController, UITableViewDataSource,
     }
     
     // MARK: - Action
-    
-    override func tappedLeftBarButton(sender: UIButton) {
-        self.popDownViewController()
-    }
 
     override func tappedRightBarButton(sender: UIButton) {
         let newScheduleViewController = main_storyboard.instantiateViewController(withIdentifier: "NewScheduleViewController") as! NewScheduleViewController
