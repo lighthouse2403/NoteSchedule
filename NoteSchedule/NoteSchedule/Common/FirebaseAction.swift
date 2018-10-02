@@ -63,9 +63,20 @@ class FirebaseAction: NSObject {
     }
     
     func sync() {
+        var resultRef: DatabaseReference = Database.database().reference()
+        resultRef = ref.child("users").child((UIDevice.current.identifierForVendor?.uuidString)!).child("schedules")
+
         let scheduleArray = DatabaseManager.getNotYetSyncSchedule(context: nil)
         scheduleArray.forEach({schedule in
+            resultRef.child(schedule.id!).child("note").setValue(schedule.note!)
+            resultRef.child(schedule.id!).child("time").setValue(schedule.time)
+            resultRef.child(schedule.id!).child("password").setValue(schedule.password)
+            resultRef.child(schedule.id!).child("isAlarm").setValue(schedule.isAlarm)
             
+            let dict = ["id": schedule.id!,"isSync": true] as [String : Any]
+            DatabaseManager.syncSchedule(scheduleDict: dict, onCompletionHandler: {
+                
+            })
         })
     }
     

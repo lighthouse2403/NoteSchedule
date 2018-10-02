@@ -61,7 +61,7 @@ class NewScheduleViewController: OriginalViewController {
         
         let password        = (passwordTextfield.text?.count)! > 0 ? passwordTextfield.text! : ""
         let note            = noteTextView.text.count > 0 ? noteTextView.text! : "Nhắc nhớ"
-        let dict            = ["id": String(Date().timeIntervalSince1970), "time": time, "isAlarm": alarmSwitch.isOn, "note": note, "password": password, "isSync": false] as [String : Any]
+        let dict            = ["id": String(Int(Date().timeIntervalSince1970 * 100000)), "time": time, "isAlarm": alarmSwitch.isOn, "note": note, "password": password, "isSync": false] as [String : Any]
         DatabaseManager.syncSchedule(scheduleDict: dict, onCompletionHandler: {
             if self.alarmSwitch.isOn {
                 if self.time >= Date().timeStamp() {

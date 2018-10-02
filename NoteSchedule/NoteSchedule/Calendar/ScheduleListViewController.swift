@@ -22,6 +22,7 @@ class ScheduleListViewController: OriginalViewController, UITableViewDataSource,
 
     override func viewWillAppear(_ animated: Bool) {
         self.getData()
+        app_delegate.firebaseObject.sync()
     }
     
     override func didReceiveMemoryWarning() {
