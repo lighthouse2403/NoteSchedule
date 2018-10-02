@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18A778DA37B9732428D6236E /* Pods_NoteScheduleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E80F9CCE3702F96A49CB0F1E /* Pods_NoteScheduleTests.framework */; };
-		D2E2F2C8B76AD5397B2E44B0 /* Pods_NoteScheduleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE3C0DFFFE51AB2DA407929 /* Pods_NoteScheduleUITests.framework */; };
-		D5B0C8A53F80BFEAE9641E2E /* Pods_NoteSchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271A4A2BC4D908D605C064BD /* Pods_NoteSchedule.framework */; };
+		9C304D78C740B00D621142AF /* Pods_NoteSchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DFED13FC6FFF774FF33A5D /* Pods_NoteSchedule.framework */; };
+		F4C96C411DCED3093823C22D /* Pods_NoteScheduleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EBE38AF80F6463FB1AA342 /* Pods_NoteScheduleTests.framework */; };
 		FB2D9E0521632CDB009BB827 /* DatePickerCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D9E0321632CDB009BB827 /* DatePickerCustomView.swift */; };
 		FB2D9E0621632CDB009BB827 /* DatePickerCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB2D9E0421632CDB009BB827 /* DatePickerCustomView.xib */; };
 		FB2D9E0821635103009BB827 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB2D9E0721635103009BB827 /* GoogleService-Info.plist */; };
@@ -20,8 +19,6 @@
 		FB7D0FE521630A34009B8127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7D0FE321630A34009B8127 /* Main.storyboard */; };
 		FB7D0FE721630A36009B8127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7D0FE621630A36009B8127 /* Assets.xcassets */; };
 		FB7D0FEA21630A36009B8127 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7D0FE821630A36009B8127 /* LaunchScreen.storyboard */; };
-		FB7D0FF521630A36009B8127 /* NoteScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D0FF421630A36009B8127 /* NoteScheduleTests.swift */; };
-		FB7D100021630A36009B8127 /* NoteScheduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D0FFF21630A36009B8127 /* NoteScheduleUITests.swift */; };
 		FB7D101321631EC5009B8127 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D100F21631EC4009B8127 /* ScheduleTableViewCell.swift */; };
 		FB7D101421631EC5009B8127 /* EditScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D101021631EC4009B8127 /* EditScheduleViewController.swift */; };
 		FB7D101521631EC5009B8127 /* NewScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D101121631EC4009B8127 /* NewScheduleViewController.swift */; };
@@ -82,6 +79,7 @@
 		FB7D108C21632765009B8127 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D105921632765009B8127 /* Define.swift */; };
 		FB7D1090216327C7009B8127 /* NoteSchedule.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB7D108E216327C7009B8127 /* NoteSchedule.xcdatamodeld */; };
 		FB7D10922163288D009B8127 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D10912163288D009B8127 /* DatabaseManager.swift */; };
+		FF551516B69E01D960FEB650 /* Pods_NoteScheduleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6CE86745B14EBD3D02B5281 /* Pods_NoteScheduleUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,14 +100,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		271A4A2BC4D908D605C064BD /* Pods_NoteSchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteSchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4858EF8DB8F052C04B60DC22 /* Pods-NoteSchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteSchedule.debug.xcconfig"; path = "Target Support Files/Pods-NoteSchedule/Pods-NoteSchedule.debug.xcconfig"; sourceTree = "<group>"; };
-		B5DA4A5027B6B72CF9F500AD /* Pods-NoteScheduleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteScheduleTests.debug.xcconfig"; path = "Target Support Files/Pods-NoteScheduleTests/Pods-NoteScheduleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BF0918626C60AA4A9709B98F /* Pods-NoteSchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteSchedule.release.xcconfig"; path = "Target Support Files/Pods-NoteSchedule/Pods-NoteSchedule.release.xcconfig"; sourceTree = "<group>"; };
-		CD62D954ADD0366028726458 /* Pods-NoteScheduleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteScheduleTests.release.xcconfig"; path = "Target Support Files/Pods-NoteScheduleTests/Pods-NoteScheduleTests.release.xcconfig"; sourceTree = "<group>"; };
-		E80F9CCE3702F96A49CB0F1E /* Pods_NoteScheduleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteScheduleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E98B33F04D681F39295E84AF /* Pods-NoteScheduleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteScheduleUITests.release.xcconfig"; path = "Target Support Files/Pods-NoteScheduleUITests/Pods-NoteScheduleUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F7F6A06A11B08F5E5276BB84 /* Pods-NoteScheduleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteScheduleUITests.debug.xcconfig"; path = "Target Support Files/Pods-NoteScheduleUITests/Pods-NoteScheduleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		07EBE38AF80F6463FB1AA342 /* Pods_NoteScheduleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteScheduleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		217AF95D345E4D96BC81F78C /* Pods-NoteScheduleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteScheduleTests.release.xcconfig"; path = "Target Support Files/Pods-NoteScheduleTests/Pods-NoteScheduleTests.release.xcconfig"; sourceTree = "<group>"; };
+		452D25C3B4CFED8AC1F95FC0 /* Pods-NoteScheduleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteScheduleUITests.release.xcconfig"; path = "Target Support Files/Pods-NoteScheduleUITests/Pods-NoteScheduleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		50DFED13FC6FFF774FF33A5D /* Pods_NoteSchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteSchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		978685D259D5C6809466B85B /* Pods-NoteScheduleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteScheduleTests.debug.xcconfig"; path = "Target Support Files/Pods-NoteScheduleTests/Pods-NoteScheduleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E6ABE1516B7076FBF5AF137 /* Pods-NoteSchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteSchedule.release.xcconfig"; path = "Target Support Files/Pods-NoteSchedule/Pods-NoteSchedule.release.xcconfig"; sourceTree = "<group>"; };
+		CA99345F81065D6EAF66959E /* Pods-NoteSchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteSchedule.debug.xcconfig"; path = "Target Support Files/Pods-NoteSchedule/Pods-NoteSchedule.debug.xcconfig"; sourceTree = "<group>"; };
+		E6CE86745B14EBD3D02B5281 /* Pods_NoteScheduleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteScheduleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2D9E0321632CDB009BB827 /* DatePickerCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerCustomView.swift; sourceTree = "<group>"; };
 		FB2D9E0421632CDB009BB827 /* DatePickerCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerCustomView.xib; sourceTree = "<group>"; };
 		FB2D9E0721635103009BB827 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -123,11 +121,7 @@
 		FB7D0FE921630A36009B8127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB7D0FEB21630A36009B8127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB7D0FF021630A36009B8127 /* NoteScheduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteScheduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB7D0FF421630A36009B8127 /* NoteScheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteScheduleTests.swift; sourceTree = "<group>"; };
-		FB7D0FF621630A36009B8127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB7D0FFB21630A36009B8127 /* NoteScheduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteScheduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB7D0FFF21630A36009B8127 /* NoteScheduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteScheduleUITests.swift; sourceTree = "<group>"; };
-		FB7D100121630A36009B8127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB7D100F21631EC4009B8127 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		FB7D101021631EC4009B8127 /* EditScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditScheduleViewController.swift; sourceTree = "<group>"; };
 		FB7D101121631EC4009B8127 /* NewScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewScheduleViewController.swift; sourceTree = "<group>"; };
@@ -189,7 +183,7 @@
 		FB7D105921632765009B8127 /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 		FB7D108F216327C7009B8127 /* NoteSchedule.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteSchedule.xcdatamodel; sourceTree = "<group>"; };
 		FB7D10912163288D009B8127 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
-		FBE3C0DFFFE51AB2DA407929 /* Pods_NoteScheduleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteScheduleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB82B96C4BA4CD3D3E51CB5F /* Pods-NoteScheduleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteScheduleUITests.debug.xcconfig"; path = "Target Support Files/Pods-NoteScheduleUITests/Pods-NoteScheduleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,7 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5B0C8A53F80BFEAE9641E2E /* Pods_NoteSchedule.framework in Frameworks */,
+				9C304D78C740B00D621142AF /* Pods_NoteSchedule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +199,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18A778DA37B9732428D6236E /* Pods_NoteScheduleTests.framework in Frameworks */,
+				F4C96C411DCED3093823C22D /* Pods_NoteScheduleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,19 +207,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2E2F2C8B76AD5397B2E44B0 /* Pods_NoteScheduleUITests.framework in Frameworks */,
+				FF551516B69E01D960FEB650 /* Pods_NoteScheduleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B96C1B121D6066B07AF0C95 /* Frameworks */ = {
+		909767780E879D1CBD7369C8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				271A4A2BC4D908D605C064BD /* Pods_NoteSchedule.framework */,
-				E80F9CCE3702F96A49CB0F1E /* Pods_NoteScheduleTests.framework */,
-				FBE3C0DFFFE51AB2DA407929 /* Pods_NoteScheduleUITests.framework */,
+				CA99345F81065D6EAF66959E /* Pods-NoteSchedule.debug.xcconfig */,
+				9E6ABE1516B7076FBF5AF137 /* Pods-NoteSchedule.release.xcconfig */,
+				978685D259D5C6809466B85B /* Pods-NoteScheduleTests.debug.xcconfig */,
+				217AF95D345E4D96BC81F78C /* Pods-NoteScheduleTests.release.xcconfig */,
+				FB82B96C4BA4CD3D3E51CB5F /* Pods-NoteScheduleUITests.debug.xcconfig */,
+				452D25C3B4CFED8AC1F95FC0 /* Pods-NoteScheduleUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A6D5FF56801708D1D9021F3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50DFED13FC6FFF774FF33A5D /* Pods_NoteSchedule.framework */,
+				07EBE38AF80F6463FB1AA342 /* Pods_NoteScheduleTests.framework */,
+				E6CE86745B14EBD3D02B5281 /* Pods_NoteScheduleUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -245,11 +252,9 @@
 			isa = PBXGroup;
 			children = (
 				FB7D0FDE21630A34009B8127 /* NoteSchedule */,
-				FB7D0FF321630A36009B8127 /* NoteScheduleTests */,
-				FB7D0FFE21630A36009B8127 /* NoteScheduleUITests */,
 				FB7D0FDD21630A34009B8127 /* Products */,
-				FF3B6024F73E6A0D7152C1FF /* Pods */,
-				2B96C1B121D6066B07AF0C95 /* Frameworks */,
+				909767780E879D1CBD7369C8 /* Pods */,
+				A6D5FF56801708D1D9021F3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -277,24 +282,6 @@
 				FB7D100D21631EC4009B8127 /* Calendar */,
 			);
 			path = NoteSchedule;
-			sourceTree = "<group>";
-		};
-		FB7D0FF321630A36009B8127 /* NoteScheduleTests */ = {
-			isa = PBXGroup;
-			children = (
-				FB7D0FF421630A36009B8127 /* NoteScheduleTests.swift */,
-				FB7D0FF621630A36009B8127 /* Info.plist */,
-			);
-			path = NoteScheduleTests;
-			sourceTree = "<group>";
-		};
-		FB7D0FFE21630A36009B8127 /* NoteScheduleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FB7D0FFF21630A36009B8127 /* NoteScheduleUITests.swift */,
-				FB7D100121630A36009B8127 /* Info.plist */,
-			);
-			path = NoteScheduleUITests;
 			sourceTree = "<group>";
 		};
 		FB7D100D21631EC4009B8127 /* Calendar */ = {
@@ -452,19 +439,6 @@
 				FB2D9E0921635E91009BB827 /* NoteSchedule.xcmappingmodel */,
 			);
 			path = Database;
-			sourceTree = "<group>";
-		};
-		FF3B6024F73E6A0D7152C1FF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4858EF8DB8F052C04B60DC22 /* Pods-NoteSchedule.debug.xcconfig */,
-				BF0918626C60AA4A9709B98F /* Pods-NoteSchedule.release.xcconfig */,
-				B5DA4A5027B6B72CF9F500AD /* Pods-NoteScheduleTests.debug.xcconfig */,
-				CD62D954ADD0366028726458 /* Pods-NoteScheduleTests.release.xcconfig */,
-				F7F6A06A11B08F5E5276BB84 /* Pods-NoteScheduleUITests.debug.xcconfig */,
-				E98B33F04D681F39295E84AF /* Pods-NoteScheduleUITests.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -757,7 +731,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB7D0FF521630A36009B8127 /* NoteScheduleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -765,7 +738,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB7D100021630A36009B8127 /* NoteScheduleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -855,7 +827,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -909,7 +881,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -920,49 +892,56 @@
 		};
 		FB7D100521630A36009B8127 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4858EF8DB8F052C04B60DC22 /* Pods-NoteSchedule.debug.xcconfig */;
+			baseConfigurationReference = CA99345F81065D6EAF66959E /* Pods-NoteSchedule.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RT689AHQ26;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Q38789M8SL;
 				INFOPLIST_FILE = "$(SRCROOT)/NoteSchedule/Configuration/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Beacon.NoteSchedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NoteSchedule_dev;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FB7D100621630A36009B8127 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF0918626C60AA4A9709B98F /* Pods-NoteSchedule.release.xcconfig */;
+			baseConfigurationReference = 9E6ABE1516B7076FBF5AF137 /* Pods-NoteSchedule.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RT689AHQ26;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Q38789M8SL;
 				INFOPLIST_FILE = "$(SRCROOT)/NoteSchedule/Configuration/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Beacon.NoteSchedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NoteSchedule_Appstore;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		FB7D100821630A36009B8127 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5DA4A5027B6B72CF9F500AD /* Pods-NoteScheduleTests.debug.xcconfig */;
+			baseConfigurationReference = 978685D259D5C6809466B85B /* Pods-NoteScheduleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q38789M8SL;
 				INFOPLIST_FILE = NoteScheduleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -971,6 +950,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Beacon.NoteScheduleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteSchedule.app/NoteSchedule";
@@ -979,11 +959,13 @@
 		};
 		FB7D100921630A36009B8127 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD62D954ADD0366028726458 /* Pods-NoteScheduleTests.release.xcconfig */;
+			baseConfigurationReference = 217AF95D345E4D96BC81F78C /* Pods-NoteScheduleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q38789M8SL;
 				INFOPLIST_FILE = NoteScheduleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -992,6 +974,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Beacon.NoteScheduleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteSchedule.app/NoteSchedule";
@@ -1000,10 +983,11 @@
 		};
 		FB7D100B21630A36009B8127 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7F6A06A11B08F5E5276BB84 /* Pods-NoteScheduleUITests.debug.xcconfig */;
+			baseConfigurationReference = FB82B96C4BA4CD3D3E51CB5F /* Pods-NoteScheduleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q38789M8SL;
 				INFOPLIST_FILE = NoteScheduleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1020,10 +1004,11 @@
 		};
 		FB7D100C21630A36009B8127 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E98B33F04D681F39295E84AF /* Pods-NoteScheduleUITests.release.xcconfig */;
+			baseConfigurationReference = 452D25C3B4CFED8AC1F95FC0 /* Pods-NoteScheduleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q38789M8SL;
 				INFOPLIST_FILE = NoteScheduleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
