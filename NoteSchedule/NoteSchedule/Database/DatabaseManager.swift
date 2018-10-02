@@ -24,13 +24,16 @@ class DatabaseManager: NSObject {
                 }
             }
             
-            
             if let time = scheduleDict["time"] {
                 schedule!.time = time as! Double
             }
             
             if let note = scheduleDict["note"] {
                 schedule!.note = note as? String
+            }
+            
+            if let password = scheduleDict["password"] {
+                schedule!.password = password as? String
             }
             
             if let isAlarm = scheduleDict["isAlarm"] {
@@ -40,6 +43,19 @@ class DatabaseManager: NSObject {
         }, completion: {(isCompletion,error) in
             onCompletionHandler()
         })
+    }
+    
+    static func getSchedule(id: String, password: String, context: NSManagedObjectContext?) -> Schedule? {
+        let currentContext: NSManagedObjectContext?
+        
+        if context == nil {
+            currentContext = NSManagedObjectContext.mr_default()
+        } else {
+            currentContext = context
+        }
+        let predicate = NSPredicate(format: "id = %@",id)
+        let schedule = Schedule.mr_findFirst(with: predicate, in: currentContext!)
+        return schedule
     }
     
     static func getSchedule(id: String, context: NSManagedObjectContext?) -> Schedule? {
@@ -67,10 +83,10 @@ class DatabaseManager: NSObject {
         return scheduleArray != nil ? scheduleArray! : [Schedule]()
     }
     
-    static func deleteSchedule(id: String, context: NSManagedObjectContext?, onCompletionHandler:@escaping () -> ()) {
+    static func deleteSchedule(id: String, password: String, context: NSManagedObjectContext?, onCompletionHandler:@escaping () -> ()) {
         MagicalRecord.save({(localContext : NSManagedObjectContext) in
             
-            let schedule = self.getSchedule(id: id, context: localContext)
+            let schedule = self.getSchedule(id: id, password: password, context: localContext)
             schedule?.mr_deleteEntity()
             
         }, completion: {(isCompletion,error) in
