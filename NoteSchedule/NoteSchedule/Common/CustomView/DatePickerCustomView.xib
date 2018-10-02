@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" restorationIdentifier="DatePickerCustomView" id="iN0-l3-epB" customClass="DatePickerCustomView" customModule="PregnancyDiary" customModuleProvider="target">
+        <view contentMode="scaleToFill" restorationIdentifier="DatePickerCustomView" id="iN0-l3-epB" customClass="DatePickerCustomView" customModule="NoteSchedule" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -97,7 +97,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="0.5" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="9sZ-3Z-1d4" secondAttribute="trailing" id="2nS-uh-rds"/>
                 <constraint firstItem="xhu-H4-Mey" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="M8x-B4-uoV"/>

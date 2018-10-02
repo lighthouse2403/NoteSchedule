@@ -19,9 +19,9 @@ class PasswordView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        bodyView.customBorder(radius: 8, color: Common.mainColor())
+        bodyView.customBorder(radius: 10, color: .clear)
         okButton.setupBorder()
-        textField.customBorder(radius: textField.frame.height/2, color: .lightGray, width: 1)
+        textField.customBorder(radius: textField.frame.height/2, color: Common.mainColor(), width: 2)
     }
     
     @IBAction func cancelButton_clicked(_ sender: Any) {
