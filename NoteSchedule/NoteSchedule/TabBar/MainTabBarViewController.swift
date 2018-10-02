@@ -22,9 +22,11 @@ class MainTabBarViewController: UITabBarController {
     //MARK: - Function
     func addTabBarViewController() {
         // Pregnancy
-        let scheduleListViewController = main_storyboard.instantiateViewController(withIdentifier: "ScheduleListViewController") as! ScheduleListViewController
-        let tabBar1 = self.setupController(scheduleListViewController,
-                                               tabName: "Thai kỳ",
+        let scheduleListViewController  = main_storyboard.instantiateViewController(withIdentifier: "ScheduleListViewController") as! ScheduleListViewController
+        let scheduleNavigationVC        = UINavigationController.init(rootViewController: scheduleListViewController)
+        scheduleNavigationVC.navigationBar.barTintColor = Common.mainColor()
+        let tabBar1 = self.setupController(scheduleNavigationVC,
+                                               tabName: "Lập kế hoạch",
                                                image: IMAGE("pregnancyBar"),
                                                selectedImage: IMAGE("pregnancyBar"))
         

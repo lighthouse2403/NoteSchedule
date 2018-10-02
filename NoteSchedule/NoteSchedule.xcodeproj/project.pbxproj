@@ -13,6 +13,7 @@
 		FB2D9E0121632933009BB827 /* NoteSchedule.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = FB2D9E0021632933009BB827 /* NoteSchedule.xcmappingmodel */; };
 		FB2D9E0521632CDB009BB827 /* DatePickerCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D9E0321632CDB009BB827 /* DatePickerCustomView.swift */; };
 		FB2D9E0621632CDB009BB827 /* DatePickerCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB2D9E0421632CDB009BB827 /* DatePickerCustomView.xib */; };
+		FB2D9E0821635103009BB827 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB2D9E0721635103009BB827 /* GoogleService-Info.plist */; };
 		FB7D0FE021630A34009B8127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D0FDF21630A34009B8127 /* AppDelegate.swift */; };
 		FB7D0FE521630A34009B8127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7D0FE321630A34009B8127 /* Main.storyboard */; };
 		FB7D0FE721630A36009B8127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7D0FE621630A36009B8127 /* Assets.xcassets */; };
@@ -110,6 +111,7 @@
 		FB2D9E0021632933009BB827 /* NoteSchedule.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = NoteSchedule.xcmappingmodel; sourceTree = "<group>"; };
 		FB2D9E0321632CDB009BB827 /* DatePickerCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerCustomView.swift; sourceTree = "<group>"; };
 		FB2D9E0421632CDB009BB827 /* DatePickerCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerCustomView.xib; sourceTree = "<group>"; };
+		FB2D9E0721635103009BB827 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FB7D0FDC21630A34009B8127 /* NoteSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7D0FDF21630A34009B8127 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB7D0FE421630A34009B8127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -261,9 +263,9 @@
 				FB7D0FDF21630A34009B8127 /* AppDelegate.swift */,
 				FB7D101C216321C6009B8127 /* HomeViewController.swift */,
 				FB7D101721631ED7009B8127 /* OriginalViewController.swift */,
+				FB7D101F216321DF009B8127 /* Configuration */,
 				FB7D108D2163278C009B8127 /* Database */,
 				FB7D10202163274A009B8127 /* Common */,
-				FB7D101F216321DF009B8127 /* Configuration */,
 				FB7D101E216321CE009B8127 /* Storyboard */,
 				FB7D1019216321B9009B8127 /* TabBar */,
 				FB7D100D21631EC4009B8127 /* Calendar */,
@@ -330,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				FB7D0FEB21630A36009B8127 /* Info.plist */,
+				FB2D9E0721635103009BB827 /* GoogleService-Info.plist */,
 				FB7D0FE621630A36009B8127 /* Assets.xcassets */,
 			);
 			path = Configuration;
@@ -568,6 +571,7 @@
 			files = (
 				FB7D0FEA21630A36009B8127 /* LaunchScreen.storyboard in Resources */,
 				FB7D0FE721630A36009B8127 /* Assets.xcassets in Resources */,
+				FB2D9E0821635103009BB827 /* GoogleService-Info.plist in Resources */,
 				FB7D0FE521630A34009B8127 /* Main.storyboard in Resources */,
 				FB2D9E0621632CDB009BB827 /* DatePickerCustomView.xib in Resources */,
 			);
@@ -595,8 +599,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NoteSchedule/Pods-NoteSchedule-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
@@ -605,8 +607,6 @@
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MagicalRecord.framework",
