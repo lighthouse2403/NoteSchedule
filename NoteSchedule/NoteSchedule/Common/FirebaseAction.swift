@@ -62,9 +62,10 @@ class FirebaseAction: NSObject {
         })
     }
     
+    // MARK: - Sync schedule to firebase
     func sync() {
         var resultRef: DatabaseReference = Database.database().reference()
-        resultRef = ref.child("users").child((UIDevice.current.identifierForVendor?.uuidString)!).child("schedules")
+        resultRef = ref.child("schedules").child((UIDevice.current.identifierForVendor?.uuidString)!)
 
         let scheduleArray = DatabaseManager.getNotYetSyncSchedule(context: nil)
         scheduleArray.forEach({schedule in
@@ -80,21 +81,21 @@ class FirebaseAction: NSObject {
         })
     }
     
-    //MARK: - THREADS
+    //MARK: - Group
     
     /**
-    Create new thread
-     - title: title of question which display at chat list
-     - content: question of user
+    Create new group
+     - name: group name
+     - member: members in group
      **/
-    func createNewThread(title: String, content: String, onCompletionHandler: @escaping () -> ()) {
+    func createNewGroup(name: String, members: [String], onCompletionHandler: @escaping () -> ()) {
         //comform to contact id
         let serverTimestamp = ServerValue.timestamp()
         
         var resultRef: DatabaseReference = Database.database().reference()
-        resultRef = ref.child("discuss").child("threads")
+        resultRef = ref.child("groups")
         //comform to waiting share property
-        resultRef.childByAutoId().setValue(["title": title, "content": content, "userName": (UIDevice.current.identifierForVendor?.uuidString)!,"time": serverTimestamp, "lastComment": serverTimestamp, "views": 0])
+        resultRef.childByAutoId().setValue(["name": name, "members": members, "admin": (UIDevice.current.identifierForVendor?.uuidString)!,"create_time": serverTimestamp])
         onCompletionHandler()
     }
 }

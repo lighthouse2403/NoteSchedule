@@ -17,17 +17,16 @@ class OriginalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Update logs
-        DispatchQueue.global(qos: .background).async {
-            app_delegate.firebaseObject.updateLogs(viewController: self.className)
-        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
         view.endEditing(true)
         DispatchQueue.global(qos: .background).async {
+            // Update user information
             app_delegate.firebaseObject.updateNickName()
+            
+            // Update logs
+            app_delegate.firebaseObject.updateLogs(viewController: self.className)
         }
     }
     
