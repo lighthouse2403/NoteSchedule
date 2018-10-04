@@ -81,6 +81,9 @@ class FirebaseAction: NSObject {
         })
     }
     
+    func shareSchedule() {
+        <#function body#>
+    }
     //MARK: - Group
     
     /**
