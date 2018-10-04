@@ -79,6 +79,12 @@
 		FB7D108C21632765009B8127 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D105921632765009B8127 /* Define.swift */; };
 		FB7D1090216327C7009B8127 /* NoteSchedule.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB7D108E216327C7009B8127 /* NoteSchedule.xcdatamodeld */; };
 		FB7D10922163288D009B8127 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D10912163288D009B8127 /* DatabaseManager.swift */; };
+		FB8C5022216607D90020350A /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C5021216607D90020350A /* GroupsViewController.swift */; };
+		FB8C5024216608DA0020350A /* NewGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C5023216608DA0020350A /* NewGroupViewController.swift */; };
+		FB8C502721660BF40020350A /* GroupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C502621660BF40020350A /* GroupDetailViewController.swift */; };
+		FB8C502921660BFF0020350A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C502821660BFF0020350A /* SettingViewController.swift */; };
+		FB8C502C21661BFD0020350A /* SetupPassCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C502B21661BFD0020350A /* SetupPassCodeViewController.swift */; };
+		FB8C502E21661C240020350A /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C502D21661C240020350A /* SetupProfileViewController.swift */; };
 		FF551516B69E01D960FEB650 /* Pods_NoteScheduleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6CE86745B14EBD3D02B5281 /* Pods_NoteScheduleUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -184,6 +190,12 @@
 		FB7D108F216327C7009B8127 /* NoteSchedule.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteSchedule.xcdatamodel; sourceTree = "<group>"; };
 		FB7D10912163288D009B8127 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		FB82B96C4BA4CD3D3E51CB5F /* Pods-NoteScheduleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteScheduleUITests.debug.xcconfig"; path = "Target Support Files/Pods-NoteScheduleUITests/Pods-NoteScheduleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB8C5021216607D90020350A /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		FB8C5023216608DA0020350A /* NewGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupViewController.swift; sourceTree = "<group>"; };
+		FB8C502621660BF40020350A /* GroupDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailViewController.swift; sourceTree = "<group>"; };
+		FB8C502821660BFF0020350A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		FB8C502B21661BFD0020350A /* SetupPassCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupPassCodeViewController.swift; sourceTree = "<group>"; };
+		FB8C502D21661C240020350A /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +292,8 @@
 				FB7D101E216321CE009B8127 /* Storyboard */,
 				FB7D1019216321B9009B8127 /* TabBar */,
 				FB7D100D21631EC4009B8127 /* Calendar */,
+				FB8C5020216607B90020350A /* Groups */,
+				FB8C502521660A5D0020350A /* Settings */,
 			);
 			path = NoteSchedule;
 			sourceTree = "<group>";
@@ -439,6 +453,34 @@
 				FB7D108E216327C7009B8127 /* NoteSchedule.xcdatamodeld */,
 			);
 			path = Database;
+			sourceTree = "<group>";
+		};
+		FB8C5020216607B90020350A /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				FB8C5021216607D90020350A /* GroupsViewController.swift */,
+				FB8C5023216608DA0020350A /* NewGroupViewController.swift */,
+				FB8C502621660BF40020350A /* GroupDetailViewController.swift */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		FB8C502521660A5D0020350A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FB8C502A21661BA00020350A /* Passcode */,
+				FB8C502821660BFF0020350A /* SettingViewController.swift */,
+				FB8C502D21661C240020350A /* SetupProfileViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FB8C502A21661BA00020350A /* Passcode */ = {
+			isa = PBXGroup;
+			children = (
+				FB8C502B21661BFD0020350A /* SetupPassCodeViewController.swift */,
+			);
+			path = Passcode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -670,6 +712,7 @@
 				FB7D105C21632765009B8127 /* MBAutoGrowingTextView.m in Sources */,
 				FB7D106E21632765009B8127 /* GalleryConfiguration.swift in Sources */,
 				FB7D108B21632765009B8127 /* FirebaseAction.swift in Sources */,
+				FB8C502721660BF40020350A /* GroupDetailViewController.swift in Sources */,
 				FB7D105D21632765009B8127 /* BlurView.swift in Sources */,
 				FB7D106621632765009B8127 /* UIBezierPath.swift in Sources */,
 				FB7D106C21632765009B8127 /* UIView.swift in Sources */,
@@ -677,6 +720,7 @@
 				FB7D10922163288D009B8127 /* DatabaseManager.swift in Sources */,
 				FB7D108121632765009B8127 /* VideoView.swift in Sources */,
 				FB7D106321632765009B8127 /* CGRect.swift in Sources */,
+				FB8C502E21661C240020350A /* SetupProfileViewController.swift in Sources */,
 				FB7D107621632765009B8127 /* ImageFadeInHandler.swift in Sources */,
 				FB7D106521632765009B8127 /* UIApplication.swift in Sources */,
 				FB7D107E21632765009B8127 /* ThumbnailsViewController.swift in Sources */,
@@ -698,12 +742,15 @@
 				FB7D107121632765009B8127 /* GalleryItemsDataSource.swift in Sources */,
 				88F827092163C8DD00F73720 /* NoteSchedule.xcmappingmodel in Sources */,
 				FB7D107821632765009B8127 /* ItemBaseController.swift in Sources */,
+				FB8C502921660BFF0020350A /* SettingViewController.swift in Sources */,
 				FB7D101321631EC5009B8127 /* ScheduleTableViewCell.swift in Sources */,
 				FB7D105B21632765009B8127 /* LocalizeHelper.swift in Sources */,
 				FB7D108A21632765009B8127 /* Common.swift in Sources */,
+				FB8C502C21661BFD0020350A /* SetupPassCodeViewController.swift in Sources */,
 				FB7D107D21632765009B8127 /* ThumbnailCell.swift in Sources */,
 				FB7D106921632765009B8127 /* UIImageView.swift in Sources */,
 				FB7D105E21632765009B8127 /* AVPlayer.swift in Sources */,
+				FB8C5022216607D90020350A /* GroupsViewController.swift in Sources */,
 				FB7D106221632765009B8127 /* CGPoint.swift in Sources */,
 				FB7D105A21632765009B8127 /* CounterView.swift in Sources */,
 				FB7D108721632765009B8127 /* UIDeviceExtension.swift in Sources */,
@@ -720,6 +767,7 @@
 				FB7D107521632765009B8127 /* GalleryViewController.swift in Sources */,
 				FB7D107C21632765009B8127 /* Slider.swift in Sources */,
 				FB7D108621632765009B8127 /* StringExtension.swift in Sources */,
+				FB8C5024216608DA0020350A /* NewGroupViewController.swift in Sources */,
 				FB7D106421632765009B8127 /* CGSize.swift in Sources */,
 				FB7D108321632765009B8127 /* Toast.swift in Sources */,
 				FB7D106A21632765009B8127 /* UIScreen.swift in Sources */,

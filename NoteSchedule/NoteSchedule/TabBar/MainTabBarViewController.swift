@@ -21,16 +21,35 @@ class MainTabBarViewController: UITabBarController {
     
     //MARK: - Function
     func addTabBarViewController() {
-        // Pregnancy
+        
+        // Schedule
         let scheduleListViewController  = main_storyboard.instantiateViewController(withIdentifier: "ScheduleListViewController") as! ScheduleListViewController
         let scheduleNavigationVC        = UINavigationController.init(rootViewController: scheduleListViewController)
         scheduleNavigationVC.navigationBar.barTintColor = Common.mainColor()
         let tabBar1 = self.setupController(scheduleNavigationVC,
-                                               tabName: "Lập kế hoạch",
-                                               image: IMAGE("pregnancyBar"),
-                                               selectedImage: IMAGE("pregnancyBar"))
+                                               tabName: "Kế hoạch",
+                                               image: IMAGE("schedule"),
+                                               selectedImage: IMAGE("schedule"))
         
-        self.viewControllers = [tabBar1]
+        // Group list
+        let groupListViewController  = main_storyboard.instantiateViewController(withIdentifier: "GroupsViewController") as! GroupsViewController
+        let groupNavigationVC        = UINavigationController.init(rootViewController: groupListViewController)
+        groupNavigationVC.navigationBar.barTintColor = Common.mainColor()
+        let tabBar2 = self.setupController(groupNavigationVC,
+                                           tabName: "Nhóm",
+                                           image: IMAGE("groups"),
+                                           selectedImage: IMAGE("groups"))
+        
+        // Settings
+        let settingViewController       = main_storyboard.instantiateViewController(withIdentifier: "SettingViewController") as! SettingViewController
+        let settingNavigationVC         = UINavigationController.init(rootViewController: settingViewController)
+        settingNavigationVC.navigationBar.barTintColor = Common.mainColor()
+        let tabBar3 = self.setupController(settingNavigationVC,
+                                           tabName: "Cài đặt",
+                                           image: IMAGE("settings"),
+                                           selectedImage: IMAGE("settings"))
+        
+        self.viewControllers = [tabBar1,tabBar2,tabBar3]
     }
     
     func setupController(_ viewController: UIViewController, tabName: String, image: UIImage, selectedImage: UIImage) -> UIViewController {

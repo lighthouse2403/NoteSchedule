@@ -39,8 +39,8 @@ class FirebaseAction: NSObject {
         // Get current time on server
         let serverTimestamp = ServerValue.timestamp()
 
-        // Mother name
-        var name = "Ẩn danh"
+        // Device name
+        var name = UIDevice.current.name
         if UserDefaults.standard.object(forKey: "name") != nil {
             name = UserDefaults.standard.object(forKey: "name") as! String
         }
