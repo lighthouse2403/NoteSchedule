@@ -34,10 +34,7 @@ class SettingPinCodeViewController: OriginalViewController {
             UserDefaults.standard.synchronize()
             self.dismissViewController()
         } else {
-            self.showAlert(title: "Cảnh báo!", message: "Bạn muốn xoá pin code?", cancelTitle: "Bỏ qua", okTitle: "Đồng ý", onOKAction: {
-                UserDefaults.standard.removeObject(forKey: "pin_code")
-                UserDefaults.standard.synchronize()
-                self.dismissViewController()
+            self.showAlert(title: "Lỗi", message: "Bạn chưa nhập pin code?", cancelTitle: "", okTitle: "Đóng", onOKAction: {
             })
         }
     }
@@ -47,6 +44,10 @@ class SettingPinCodeViewController: OriginalViewController {
     }
     
     @IBAction func tappedNumberButton(_ sender: UIButton) {
+        if  pinCode.count < 6 {
+            let new     = sender.title(for: .normal) ?? ""
+            pinCode     = "\(pinCode)\(new)"
+        }
     }
     
     @IBAction func tappedDismiss(_ sender: UIButton) {
