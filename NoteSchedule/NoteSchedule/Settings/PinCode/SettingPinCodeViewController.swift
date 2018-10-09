@@ -12,6 +12,7 @@ class SettingPinCodeViewController: OriginalViewController {
 
     var pinCode = ""
     
+    @IBOutlet weak var pincodeView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
@@ -43,7 +44,7 @@ class SettingPinCodeViewController: OriginalViewController {
     
     @IBAction func tappedClear(_ sender: UIButton) {
         pinCode = ""
-        view.subviews.forEach({view in
+        pincodeView.subviews.forEach({view in
             if view.isKind(of: UIImageView.self) {
                 view.isHidden = true
             }
@@ -54,7 +55,7 @@ class SettingPinCodeViewController: OriginalViewController {
         if  pinCode.count < 6 {
             let new     = sender.title(for: .normal) ?? ""
             pinCode     = "\(pinCode)\(new)"
-            view.subviews.forEach({view in
+            pincodeView.subviews.forEach({view in
                 if view.tag < pinCode.count && view.isKind(of: UIImageView.self) {
                     view.isHidden = false
                 }
