@@ -479,19 +479,19 @@
 			isa = PBXGroup;
 			children = (
 				FB2FBC14216C86D7000B92C7 /* Cell */,
-				FB8C502A21661BA00020350A /* Passcode */,
+				FB8C502A21661BA00020350A /* PinCode */,
 				FB8C502821660BFF0020350A /* SettingViewController.swift */,
 				FB8C502D21661C240020350A /* SettingProfileViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		FB8C502A21661BA00020350A /* Passcode */ = {
+		FB8C502A21661BA00020350A /* PinCode */ = {
 			isa = PBXGroup;
 			children = (
 				FB8C502B21661BFD0020350A /* SettingPinCodeViewController.swift */,
 			);
-			path = Passcode;
+			path = PinCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

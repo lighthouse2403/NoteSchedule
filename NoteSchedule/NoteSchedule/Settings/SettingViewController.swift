@@ -65,7 +65,7 @@ class SettingViewController: OriginalViewController, UITableViewDelegate, UITabl
             
         default:
             let settingPinCodeViewController = main_storyboard.instantiateViewController(withIdentifier: "SettingPinCodeViewController") as! SettingPinCodeViewController
-            self.navigationController?.pushViewController(settingPinCodeViewController, animated: true)
+            self.present(settingPinCodeViewController, animated: true, completion: nil)
 
             break
         }
