@@ -15,6 +15,7 @@
 		FB2D9E0821635103009BB827 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB2D9E0721635103009BB827 /* GoogleService-Info.plist */; };
 		FB2D9E0C21636DFD009BB827 /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D9E0B21636DFD009BB827 /* PasswordView.swift */; };
 		FB2D9E1021636FD6009BB827 /* PasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB2D9E0F21636FD5009BB827 /* PasswordView.xib */; };
+		FB2FBC16216C86FB000B92C7 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FBC15216C86FB000B92C7 /* SettingTableViewCell.swift */; };
 		FB7D0FE021630A34009B8127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D0FDF21630A34009B8127 /* AppDelegate.swift */; };
 		FB7D0FE521630A34009B8127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7D0FE321630A34009B8127 /* Main.storyboard */; };
 		FB7D0FE721630A36009B8127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7D0FE621630A36009B8127 /* Assets.xcassets */; };
@@ -83,8 +84,8 @@
 		FB8C5024216608DA0020350A /* NewGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C5023216608DA0020350A /* NewGroupViewController.swift */; };
 		FB8C502721660BF40020350A /* GroupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C502621660BF40020350A /* GroupDetailViewController.swift */; };
 		FB8C502921660BFF0020350A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C502821660BFF0020350A /* SettingViewController.swift */; };
-		FB8C502C21661BFD0020350A /* SetupPassCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C502B21661BFD0020350A /* SetupPassCodeViewController.swift */; };
-		FB8C502E21661C240020350A /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C502D21661C240020350A /* SetupProfileViewController.swift */; };
+		FB8C502C21661BFD0020350A /* SettingPinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C502B21661BFD0020350A /* SettingPinCodeViewController.swift */; };
+		FB8C502E21661C240020350A /* SettingProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C502D21661C240020350A /* SettingProfileViewController.swift */; };
 		FF551516B69E01D960FEB650 /* Pods_NoteScheduleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6CE86745B14EBD3D02B5281 /* Pods_NoteScheduleUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -120,6 +121,7 @@
 		FB2D9E0721635103009BB827 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FB2D9E0B21636DFD009BB827 /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
 		FB2D9E0F21636FD5009BB827 /* PasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasswordView.xib; sourceTree = "<group>"; };
+		FB2FBC15216C86FB000B92C7 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		FB7D0FDC21630A34009B8127 /* NoteSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7D0FDF21630A34009B8127 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB7D0FE421630A34009B8127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -194,8 +196,8 @@
 		FB8C5023216608DA0020350A /* NewGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupViewController.swift; sourceTree = "<group>"; };
 		FB8C502621660BF40020350A /* GroupDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailViewController.swift; sourceTree = "<group>"; };
 		FB8C502821660BFF0020350A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		FB8C502B21661BFD0020350A /* SetupPassCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupPassCodeViewController.swift; sourceTree = "<group>"; };
-		FB8C502D21661C240020350A /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
+		FB8C502B21661BFD0020350A /* SettingPinCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPinCodeViewController.swift; sourceTree = "<group>"; };
+		FB8C502D21661C240020350A /* SettingProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +260,14 @@
 				FB2D9E0F21636FD5009BB827 /* PasswordView.xib */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		FB2FBC14216C86D7000B92C7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FB2FBC15216C86FB000B92C7 /* SettingTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		FB7D0FD321630A34009B8127 = {
@@ -468,9 +478,10 @@
 		FB8C502521660A5D0020350A /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				FB2FBC14216C86D7000B92C7 /* Cell */,
 				FB8C502A21661BA00020350A /* Passcode */,
 				FB8C502821660BFF0020350A /* SettingViewController.swift */,
-				FB8C502D21661C240020350A /* SetupProfileViewController.swift */,
+				FB8C502D21661C240020350A /* SettingProfileViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -478,7 +489,7 @@
 		FB8C502A21661BA00020350A /* Passcode */ = {
 			isa = PBXGroup;
 			children = (
-				FB8C502B21661BFD0020350A /* SetupPassCodeViewController.swift */,
+				FB8C502B21661BFD0020350A /* SettingPinCodeViewController.swift */,
 			);
 			path = Passcode;
 			sourceTree = "<group>";
@@ -713,6 +724,7 @@
 				FB7D106E21632765009B8127 /* GalleryConfiguration.swift in Sources */,
 				FB7D108B21632765009B8127 /* FirebaseAction.swift in Sources */,
 				FB8C502721660BF40020350A /* GroupDetailViewController.swift in Sources */,
+				FB2FBC16216C86FB000B92C7 /* SettingTableViewCell.swift in Sources */,
 				FB7D105D21632765009B8127 /* BlurView.swift in Sources */,
 				FB7D106621632765009B8127 /* UIBezierPath.swift in Sources */,
 				FB7D106C21632765009B8127 /* UIView.swift in Sources */,
@@ -720,7 +732,7 @@
 				FB7D10922163288D009B8127 /* DatabaseManager.swift in Sources */,
 				FB7D108121632765009B8127 /* VideoView.swift in Sources */,
 				FB7D106321632765009B8127 /* CGRect.swift in Sources */,
-				FB8C502E21661C240020350A /* SetupProfileViewController.swift in Sources */,
+				FB8C502E21661C240020350A /* SettingProfileViewController.swift in Sources */,
 				FB7D107621632765009B8127 /* ImageFadeInHandler.swift in Sources */,
 				FB7D106521632765009B8127 /* UIApplication.swift in Sources */,
 				FB7D107E21632765009B8127 /* ThumbnailsViewController.swift in Sources */,
@@ -746,7 +758,7 @@
 				FB7D101321631EC5009B8127 /* ScheduleTableViewCell.swift in Sources */,
 				FB7D105B21632765009B8127 /* LocalizeHelper.swift in Sources */,
 				FB7D108A21632765009B8127 /* Common.swift in Sources */,
-				FB8C502C21661BFD0020350A /* SetupPassCodeViewController.swift in Sources */,
+				FB8C502C21661BFD0020350A /* SettingPinCodeViewController.swift in Sources */,
 				FB7D107D21632765009B8127 /* ThumbnailCell.swift in Sources */,
 				FB7D106921632765009B8127 /* UIImageView.swift in Sources */,
 				FB7D105E21632765009B8127 /* AVPlayer.swift in Sources */,
