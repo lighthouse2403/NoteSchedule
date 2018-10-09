@@ -10,6 +10,10 @@ import UIKit
 
 class SettingProfileViewController: OriginalViewController {
 
+    @IBOutlet weak var nicknameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var saveButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationBar()
@@ -34,4 +38,15 @@ class SettingProfileViewController: OriginalViewController {
     override func tappedLeftBarButton(sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func tappedSaveProfile(_ sender: UIButton) {
+        if (nicknameTextField.text?.count)! > 0 {
+            UserDefaults.standard.set(nicknameTextField.text!, forKey: "nick_name")
+            UserDefaults.standard.synchronize()
+            self.navigationController?.popViewController(animated: true)
+        } else {
+            self.showAlert(title: "Lỗi", message: "Bạn chưa nhập nick name", cancelTitle: "", okTitle: "Đóng", onOKAction: {})
+        }
+    }
+    
 }
