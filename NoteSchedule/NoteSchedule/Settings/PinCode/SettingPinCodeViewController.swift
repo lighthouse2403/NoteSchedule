@@ -32,7 +32,9 @@ class SettingPinCodeViewController: OriginalViewController {
         if pinCode.count > 0 && 6 >= pinCode.count {
             UserDefaults.standard.set(pinCode, forKey: "pin_code")
             UserDefaults.standard.synchronize()
-            self.dismissViewController()
+            self.showAlert(title: "Thành công", message: "Cài đặt pin code thành công", cancelTitle: "", okTitle: "Đóng", onOKAction: {
+                self.dismissViewController()
+            })
         } else {
             self.showAlert(title: "Lỗi", message: "Bạn chưa nhập pin code?", cancelTitle: "", okTitle: "Đóng", onOKAction: {
             })
@@ -41,12 +43,22 @@ class SettingPinCodeViewController: OriginalViewController {
     
     @IBAction func tappedClear(_ sender: UIButton) {
         pinCode = ""
+        view.subviews.forEach({view in
+            if view.isKind(of: UIImageView.self) {
+                view.isHidden = true
+            }
+        })
     }
     
     @IBAction func tappedNumberButton(_ sender: UIButton) {
         if  pinCode.count < 6 {
             let new     = sender.title(for: .normal) ?? ""
             pinCode     = "\(pinCode)\(new)"
+            view.subviews.forEach({view in
+                if view.tag < pinCode.count && view.isKind(of: UIImageView.self) {
+                    view.isHidden = false
+                }
+            })
         }
     }
     
