@@ -17,6 +17,7 @@ class SettingProfileViewController: OriginalViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationBar()
+        self.setupUI()
         self.setupData()
     }
 
@@ -31,12 +32,17 @@ class SettingProfileViewController: OriginalViewController {
         self.addLeftBarItem(imageName: "back", title: "")
     }
     
+    func setupUI() {
+        nicknameTextField.customBorder(radius: nicknameTextField.frame.height/2, color: Common.mainColor())
+        emailTextField.customBorder(radius: emailTextField.frame.height/2, color: Common.mainColor())
+    }
+    
     func setupData() {
         let nickName    = UserDefaults.standard.object(forKey: "nick_name") ?? ""
         let email       = UserDefaults.standard.object(forKey: "email") ?? ""
         
-        nicknameTextField.text  = nickName
-        emailTextField.text     = email
+        nicknameTextField.text  = nickName as? String
+        emailTextField.text     = email as? String
     }
     
     // MARK: - Action
