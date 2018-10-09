@@ -23,7 +23,7 @@ class SettingProfileViewController: OriginalViewController {
     // MARK: - Setup UI
     
     func setupNavigationBar() {
-        self.customTitle(title: "Pin code")
+        self.customTitle(title: "Profile")
         self.addLeftBarItem(imageName: "back", title: "")
     }
     

@@ -646,13 +646,97 @@
                     <view key="view" contentMode="scaleToFill" id="FCg-HH-dg7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PIN CODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONW-rW-3TS">
+                                <rect key="frame" x="109.5" y="60" width="101.5" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FrN-Kd-HFN">
+                                <rect key="frame" x="19.5" y="151" width="40" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="jeS-hR-aYX"/>
+                                    <constraint firstAttribute="width" constant="40" id="ujU-vn-PFP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lah-v9-TZy">
+                                <rect key="frame" x="67.5" y="151" width="40" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="6VA-rb-UHN"/>
+                                    <constraint firstAttribute="height" constant="1" id="OyA-jZ-Mn0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDp-gt-iEw">
+                                <rect key="frame" x="115.5" y="151" width="40" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="7XF-K4-g8v"/>
+                                    <constraint firstAttribute="height" constant="1" id="yCs-hk-fch"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFb-Iv-mK1">
+                                <rect key="frame" x="164.5" y="151" width="35" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="2nx-V9-hyX"/>
+                                    <constraint firstAttribute="height" constant="1" id="a6t-DI-5iy"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVO-Ci-ge6">
+                                <rect key="frame" x="207" y="151" width="40" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="E9E-bZ-WmM"/>
+                                    <constraint firstAttribute="height" constant="1" id="Tuf-lf-Bej"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9G-PM-vYd">
+                                <rect key="frame" x="159.5" y="147" width="1" height="5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="FsY-Sg-uaK"/>
+                                    <constraint firstAttribute="width" constant="1" id="lJt-YN-gqB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTy-sK-NFl">
+                                <rect key="frame" x="255" y="151" width="40" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="4bT-ds-IdO"/>
+                                    <constraint firstAttribute="height" constant="1" id="oyv-xK-7Hf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2784313725" green="0.67450980390000004" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="z9G-PM-vYd" firstAttribute="top" secondItem="ONW-rW-3TS" secondAttribute="bottom" constant="60" id="6gX-FQ-ybf"/>
+                            <constraint firstItem="z9G-PM-vYd" firstAttribute="bottom" secondItem="FrN-Kd-HFN" secondAttribute="bottom" id="A3x-2d-cfL"/>
+                            <constraint firstItem="lVO-Ci-ge6" firstAttribute="leading" secondItem="VFb-Iv-mK1" secondAttribute="trailing" constant="8" id="BmZ-Zz-4pQ"/>
+                            <constraint firstItem="z9G-PM-vYd" firstAttribute="bottom" secondItem="fDp-gt-iEw" secondAttribute="bottom" id="COg-W6-Dsp"/>
+                            <constraint firstItem="VFb-Iv-mK1" firstAttribute="bottom" secondItem="z9G-PM-vYd" secondAttribute="bottom" id="Ie3-e9-Ebi"/>
+                            <constraint firstItem="ONW-rW-3TS" firstAttribute="top" secondItem="6y6-J0-D69" secondAttribute="top" constant="40" id="KZi-WA-giv"/>
+                            <constraint firstItem="lVO-Ci-ge6" firstAttribute="bottom" secondItem="z9G-PM-vYd" secondAttribute="bottom" id="Lmf-7T-U4x"/>
+                            <constraint firstItem="lah-v9-TZy" firstAttribute="leading" secondItem="FrN-Kd-HFN" secondAttribute="trailing" constant="8" id="P9Q-DY-tJs"/>
+                            <constraint firstItem="wTy-sK-NFl" firstAttribute="bottom" secondItem="z9G-PM-vYd" secondAttribute="bottom" id="PwW-f1-qYj"/>
+                            <constraint firstItem="z9G-PM-vYd" firstAttribute="centerX" secondItem="FCg-HH-dg7" secondAttribute="centerX" id="aJu-do-eXb"/>
+                            <constraint firstItem="ONW-rW-3TS" firstAttribute="centerX" secondItem="FCg-HH-dg7" secondAttribute="centerX" id="dMH-bz-RYM"/>
+                            <constraint firstItem="z9G-PM-vYd" firstAttribute="bottom" secondItem="lah-v9-TZy" secondAttribute="bottom" id="eBj-en-eRo"/>
+                            <constraint firstItem="wTy-sK-NFl" firstAttribute="leading" secondItem="lVO-Ci-ge6" secondAttribute="trailing" constant="8" id="hS7-XD-cnc"/>
+                            <constraint firstItem="VFb-Iv-mK1" firstAttribute="leading" secondItem="z9G-PM-vYd" secondAttribute="trailing" constant="4" id="ozh-XA-mQK"/>
+                            <constraint firstItem="z9G-PM-vYd" firstAttribute="leading" secondItem="fDp-gt-iEw" secondAttribute="trailing" constant="4" id="qO6-6z-7mT"/>
+                            <constraint firstItem="fDp-gt-iEw" firstAttribute="leading" secondItem="lah-v9-TZy" secondAttribute="trailing" constant="8" id="xCX-TK-q0P"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6y6-J0-D69"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKe-Mg-Rl9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2901" y="2893"/>
+            <point key="canvasLocation" x="2900.625" y="2892.2535211267605"/>
         </scene>
         <!--Main Tab Bar View Controller-->
         <scene sceneID="wfe-6E-GGU">
