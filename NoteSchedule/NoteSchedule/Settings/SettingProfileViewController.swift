@@ -17,7 +17,7 @@ class SettingProfileViewController: OriginalViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationBar()
-        self.setupUI()
+        self.setupData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,7 +31,12 @@ class SettingProfileViewController: OriginalViewController {
         self.addLeftBarItem(imageName: "back", title: "")
     }
     
-    func setupUI() {
+    func setupData() {
+        let nickName    = UserDefaults.standard.object(forKey: "nick_name") ?? ""
+        let email       = UserDefaults.standard.object(forKey: "email") ?? ""
+        
+        nicknameTextField.text  = nickName
+        emailTextField.text     = email
     }
     
     // MARK: - Action
