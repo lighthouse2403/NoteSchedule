@@ -110,4 +110,46 @@ class DatabaseManager: NSObject {
             onCompletionHandler()
         })
     }
+    
+    // MARK: - User
+    static func syncUser (UserDict : [String: Any], onCompletionHandler:@escaping () -> ()) {
+        MagicalRecord.save({(localContext : NSManagedObjectContext) in
+            var user: User?
+            
+            if let id = UserDict["id"] {
+                user = self.getUser(id: id as! String, context: localContext)
+                if user == nil {
+                    user = User.mr_createEntity(in: localContext)
+                    user?.id = id as! String
+                }
+            }
+            
+            if let name = UserDict["name"] {
+                user!.name = name as? String
+            }
+            
+            if let email = UserDict["email"] {
+                user!.email = email as? String
+            }
+            
+            if let lastOnline = UserDict["lastOnline"] {
+                user!.lastOnline = lastOnline as! Double
+            }
+        }, completion: {(isCompletion,error) in
+            onCompletionHandler()
+        })
+    }
+    
+    static func getUser(id: String, context: NSManagedObjectContext?) -> User? {
+        let currentContext: NSManagedObjectContext?
+        
+        if context == nil {
+            currentContext = NSManagedObjectContext.mr_default()
+        } else {
+            currentContext = context
+        }
+        let predicate = NSPredicate(format: "id = %@",id)
+        let user = User.mr_findFirst(with: predicate, in: currentContext!)
+        return user
+    }
 }

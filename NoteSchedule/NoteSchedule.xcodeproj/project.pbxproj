@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88F827092163C8DD00F73720 /* NoteSchedule.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 88F827082163C8DD00F73720 /* NoteSchedule.xcmappingmodel */; };
 		9C304D78C740B00D621142AF /* Pods_NoteSchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DFED13FC6FFF774FF33A5D /* Pods_NoteSchedule.framework */; };
 		F4C96C411DCED3093823C22D /* Pods_NoteScheduleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EBE38AF80F6463FB1AA342 /* Pods_NoteScheduleTests.framework */; };
+		FB2D06D0216D994B0066ADAE /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D06CF216D994B0066ADAE /* TextField.swift */; };
+		FB2D06D3216DA61B0066ADAE /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D06D2216DA61B0066ADAE /* UserListViewController.swift */; };
+		FB2D06D5216DB9FE0066ADAE /* FavoriteUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D06D4216DB9FE0066ADAE /* FavoriteUserViewController.swift */; };
+		FB2D06D7216DD5470066ADAE /* NoteSchedule.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = FB2D06D6216DD5470066ADAE /* NoteSchedule.xcmappingmodel */; };
 		FB2D9E0521632CDB009BB827 /* DatePickerCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D9E0321632CDB009BB827 /* DatePickerCustomView.swift */; };
 		FB2D9E0621632CDB009BB827 /* DatePickerCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB2D9E0421632CDB009BB827 /* DatePickerCustomView.xib */; };
 		FB2D9E0821635103009BB827 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB2D9E0721635103009BB827 /* GoogleService-Info.plist */; };
@@ -111,11 +114,14 @@
 		217AF95D345E4D96BC81F78C /* Pods-NoteScheduleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteScheduleTests.release.xcconfig"; path = "Target Support Files/Pods-NoteScheduleTests/Pods-NoteScheduleTests.release.xcconfig"; sourceTree = "<group>"; };
 		452D25C3B4CFED8AC1F95FC0 /* Pods-NoteScheduleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteScheduleUITests.release.xcconfig"; path = "Target Support Files/Pods-NoteScheduleUITests/Pods-NoteScheduleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		50DFED13FC6FFF774FF33A5D /* Pods_NoteSchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteSchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		88F827082163C8DD00F73720 /* NoteSchedule.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = NoteSchedule.xcmappingmodel; sourceTree = "<group>"; };
 		978685D259D5C6809466B85B /* Pods-NoteScheduleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteScheduleTests.debug.xcconfig"; path = "Target Support Files/Pods-NoteScheduleTests/Pods-NoteScheduleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E6ABE1516B7076FBF5AF137 /* Pods-NoteSchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteSchedule.release.xcconfig"; path = "Target Support Files/Pods-NoteSchedule/Pods-NoteSchedule.release.xcconfig"; sourceTree = "<group>"; };
 		CA99345F81065D6EAF66959E /* Pods-NoteSchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteSchedule.debug.xcconfig"; path = "Target Support Files/Pods-NoteSchedule/Pods-NoteSchedule.debug.xcconfig"; sourceTree = "<group>"; };
 		E6CE86745B14EBD3D02B5281 /* Pods_NoteScheduleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteScheduleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB2D06CF216D994B0066ADAE /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		FB2D06D2216DA61B0066ADAE /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		FB2D06D4216DB9FE0066ADAE /* FavoriteUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUserViewController.swift; sourceTree = "<group>"; };
+		FB2D06D6216DD5470066ADAE /* NoteSchedule.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = NoteSchedule.xcmappingmodel; sourceTree = "<group>"; };
 		FB2D9E0321632CDB009BB827 /* DatePickerCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerCustomView.swift; sourceTree = "<group>"; };
 		FB2D9E0421632CDB009BB827 /* DatePickerCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerCustomView.xib; sourceTree = "<group>"; };
 		FB2D9E0721635103009BB827 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -251,6 +257,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FB2D06D1216DA5EE0066ADAE /* User */ = {
+			isa = PBXGroup;
+			children = (
+				FB2D06D2216DA61B0066ADAE /* UserListViewController.swift */,
+				FB2D06D4216DB9FE0066ADAE /* FavoriteUserViewController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		FB2D9E0221632CCA009BB827 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +318,7 @@
 				FB7D1019216321B9009B8127 /* TabBar */,
 				FB7D100D21631EC4009B8127 /* Calendar */,
 				FB8C5020216607B90020350A /* Groups */,
+				FB2D06D1216DA5EE0066ADAE /* User */,
 				FB8C502521660A5D0020350A /* Settings */,
 			);
 			path = NoteSchedule;
@@ -371,6 +387,7 @@
 		FB7D102121632765009B8127 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FB2D06CF216D994B0066ADAE /* TextField.swift */,
 				FB7D105121632765009B8127 /* Mdate.swift */,
 				FB7D105221632765009B8127 /* NSObjectExtension.swift */,
 				FB7D105321632765009B8127 /* StringExtension.swift */,
@@ -459,8 +476,8 @@
 			isa = PBXGroup;
 			children = (
 				FB7D10912163288D009B8127 /* DatabaseManager.swift */,
-				88F827082163C8DD00F73720 /* NoteSchedule.xcmappingmodel */,
 				FB7D108E216327C7009B8127 /* NoteSchedule.xcdatamodeld */,
+				FB2D06D6216DD5470066ADAE /* NoteSchedule.xcmappingmodel */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -713,6 +730,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB2D06D3216DA61B0066ADAE /* UserListViewController.swift in Sources */,
 				FB7D101821631ED7009B8127 /* OriginalViewController.swift in Sources */,
 				FB7D101621631EC5009B8127 /* ScheduleListViewController.swift in Sources */,
 				FB7D107021632765009B8127 /* GalleryItem.swift in Sources */,
@@ -738,6 +756,7 @@
 				FB7D107E21632765009B8127 /* ThumbnailsViewController.swift in Sources */,
 				FB7D107221632765009B8127 /* GalleryItemsDelegate.swift in Sources */,
 				FB7D1090216327C7009B8127 /* NoteSchedule.xcdatamodeld in Sources */,
+				FB2D06D5216DB9FE0066ADAE /* FavoriteUserViewController.swift in Sources */,
 				FB7D108421632765009B8127 /* Mdate.swift in Sources */,
 				FB7D107721632765009B8127 /* ImageViewController.swift in Sources */,
 				FB7D106821632765009B8127 /* UIColor.swift in Sources */,
@@ -752,7 +771,6 @@
 				FB7D101521631EC5009B8127 /* NewScheduleViewController.swift in Sources */,
 				FB7D106021632765009B8127 /* CALayer.swift in Sources */,
 				FB7D107121632765009B8127 /* GalleryItemsDataSource.swift in Sources */,
-				88F827092163C8DD00F73720 /* NoteSchedule.xcmappingmodel in Sources */,
 				FB7D107821632765009B8127 /* ItemBaseController.swift in Sources */,
 				FB8C502921660BFF0020350A /* SettingViewController.swift in Sources */,
 				FB7D101321631EC5009B8127 /* ScheduleTableViewCell.swift in Sources */,
@@ -764,11 +782,13 @@
 				FB7D105E21632765009B8127 /* AVPlayer.swift in Sources */,
 				FB8C5022216607D90020350A /* GroupsViewController.swift in Sources */,
 				FB7D106221632765009B8127 /* CGPoint.swift in Sources */,
+				FB2D06D0216D994B0066ADAE /* TextField.swift in Sources */,
 				FB7D105A21632765009B8127 /* CounterView.swift in Sources */,
 				FB7D108721632765009B8127 /* UIDeviceExtension.swift in Sources */,
 				FB7D108521632765009B8127 /* NSObjectExtension.swift in Sources */,
 				FB7D105F21632765009B8127 /* Bool.swift in Sources */,
 				FB7D108821632765009B8127 /* UILabelExtension.swift in Sources */,
+				FB2D06D7216DD5470066ADAE /* NoteSchedule.xcmappingmodel in Sources */,
 				FB7D106721632765009B8127 /* UIButton.swift in Sources */,
 				FB7D107B21632765009B8127 /* LayoutEnums.swift in Sources */,
 				FB7D106121632765009B8127 /* CAShapeLayer.swift in Sources */,

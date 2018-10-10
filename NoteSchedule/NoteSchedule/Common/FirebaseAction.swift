@@ -41,8 +41,8 @@ class FirebaseAction: NSObject {
 
         // Device name
         var name = UIDevice.current.name
-        if UserDefaults.standard.object(forKey: "name") != nil {
-            name = UserDefaults.standard.object(forKey: "name") as! String
+        if UserDefaults.standard.object(forKey: "nick_name") != nil {
+            name = UserDefaults.standard.object(forKey: "nick_name") as! String
         }
         
         var resultRef: DatabaseReference = Database.database().reference()

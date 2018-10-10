@@ -13,15 +13,15 @@ typealias OKBlock = (String)->Void
 class PasswordView: UIView {
 
     @IBOutlet weak var okButton: UIButton!
-    @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var bodyView: UIView!
+    @IBOutlet weak var passwordTextField: TextField!
     var okBlock: OKBlock!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         bodyView.customBorder(radius: 10, color: .clear)
         okButton.setupBorder()
-        textField.customBorder(radius: textField.frame.height/2, color: Common.mainColor(), width: 2)
+        passwordTextField.customBorder(radius: passwordTextField.frame.height/2, color: Common.mainColor(), width: 2)
     }
     
     @IBAction func cancelButton_clicked(_ sender: Any) {
@@ -30,7 +30,7 @@ class PasswordView: UIView {
     
     @IBAction func tappedOK(_ sender: Any?) {
         if (self.okBlock != nil) {
-            let password = (self.textField.text?.count)! > 0 ? self.textField.text! : ""
+            let password = (self.passwordTextField.text?.count)! > 0 ? self.passwordTextField.text! : ""
             self.okBlock(password)
         }
         self.removeFromSuperview()

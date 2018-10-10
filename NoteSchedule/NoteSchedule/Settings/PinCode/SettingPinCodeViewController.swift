@@ -16,6 +16,7 @@ class SettingPinCodeViewController: OriginalViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
+        self.setupData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +26,18 @@ class SettingPinCodeViewController: OriginalViewController {
     // MARK: - Setup UI
     
     func setupUI() {
+    }
+    
+    func setupData() {
+        let pinCode = UserDefaults.standard.object(forKey: "pin_code") as? String
+        if (pinCode?.count)! > 0 {
+            // Set up pin code
+            pincodeView.subviews.forEach({view in
+                if view.isKind(of: UIImageView.self) {
+                    view.isHidden = false
+                }
+            })
+        }
     }
     
     // MARK: - Action

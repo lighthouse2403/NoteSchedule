@@ -10,8 +10,8 @@ import UIKit
 
 class SettingProfileViewController: OriginalViewController {
 
-    @IBOutlet weak var nicknameTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var nicknameTextField: TextField!
+    @IBOutlet weak var emailTextField: TextField!
     @IBOutlet weak var saveButton: UIButton!
     
     override func viewDidLoad() {
@@ -33,12 +33,13 @@ class SettingProfileViewController: OriginalViewController {
     }
     
     func setupUI() {
+        saveButton.setupBorder()
         nicknameTextField.customBorder(radius: nicknameTextField.frame.height/2, color: Common.mainColor())
         emailTextField.customBorder(radius: emailTextField.frame.height/2, color: Common.mainColor())
     }
     
     func setupData() {
-        let nickName    = UserDefaults.standard.object(forKey: "nick_name") ?? ""
+        let nickName    = UserDefaults.standard.object(forKey: "name") ?? ""
         let email       = UserDefaults.standard.object(forKey: "email") ?? ""
         
         nicknameTextField.text  = nickName as? String
@@ -52,7 +53,9 @@ class SettingProfileViewController: OriginalViewController {
     
     @IBAction func tappedSaveProfile(_ sender: UIButton) {
         if (nicknameTextField.text?.count)! > 0 {
-            UserDefaults.standard.set(nicknameTextField.text!, forKey: "nick_name")
+            let email   = emailTextField.text ?? ""
+            UserDefaults.standard.set(nicknameTextField.text!, forKey: "name")
+            UserDefaults.standard.set(email, forKey: "email")
             UserDefaults.standard.synchronize()
             self.navigationController?.popViewController(animated: true)
         } else {

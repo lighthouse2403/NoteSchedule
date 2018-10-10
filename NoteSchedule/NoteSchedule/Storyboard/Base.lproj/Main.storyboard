@@ -76,10 +76,10 @@
                                                     </connections>
                                                 </switch>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="RJT-5h-oPc">
-                                                    <rect key="frame" x="290" y="5" width="25" height="25"/>
+                                                    <rect key="frame" x="293" y="5" width="22" height="22"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="25" id="SCb-6h-We9"/>
-                                                        <constraint firstAttribute="height" constant="25" id="WgL-2u-8hc"/>
+                                                        <constraint firstAttribute="width" constant="22" id="SCb-6h-We9"/>
+                                                        <constraint firstAttribute="height" constant="22" id="WgL-2u-8hc"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
@@ -645,22 +645,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPy-9b-PUk">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPy-9b-PUk" customClass="TextField" customModule="NoteSchedule" customModuleProvider="target">
                                 <rect key="frame" x="112" y="97.5" width="188" height="35"/>
+                                <color key="tintColor" red="0.2784313725" green="0.67450980390000004" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="gEP-Uo-LyP"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="nickname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lnb-iV-Ku2">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="nickname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lnb-iV-Ku2" customClass="TextField" customModule="NoteSchedule" customModuleProvider="target">
                                 <rect key="frame" x="112" y="52.5" width="188" height="35"/>
+                                <color key="tintColor" red="0.2784313725" green="0.67450980390000004" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Ik7-Ik-16R"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCS-Jr-9LL">
@@ -697,14 +699,87 @@
                         <viewLayoutGuide key="safeArea" id="XwE-3l-d1W"/>
                     </view>
                     <connections>
-                        <outlet property="emailTextField" destination="pPy-9b-PUk" id="y2W-wF-vvC"/>
-                        <outlet property="nicknameTextField" destination="Lnb-iV-Ku2" id="0jz-gk-6Lw"/>
+                        <outlet property="emailTextField" destination="pPy-9b-PUk" id="j6g-PF-0lu"/>
+                        <outlet property="nicknameTextField" destination="Lnb-iV-Ku2" id="raI-nG-mMI"/>
                         <outlet property="saveButton" destination="aCS-Jr-9LL" id="z9Z-cc-SIi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v6j-rJ-ly3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2256" y="2894"/>
+        </scene>
+        <!--User List View Controller-->
+        <scene sceneID="sMV-l2-euh">
+            <objects>
+                <viewController storyboardIdentifier="UserListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zmv-ks-LLi" customClass="UserListViewController" customModule="NoteSchedule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QdJ-ok-9il">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CSo-bf-Z4y">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <searchBar key="tableFooterView" contentMode="redraw" id="zFp-Wv-trT">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="zmv-ks-LLi" id="2ec-wp-iLJ"/>
+                                    </connections>
+                                </searchBar>
+                                <connections>
+                                    <outlet property="dataSource" destination="zmv-ks-LLi" id="SQX-0s-fee"/>
+                                    <outlet property="delegate" destination="zmv-ks-LLi" id="oPh-g8-4rg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CSo-bf-Z4y" firstAttribute="trailing" secondItem="72r-9s-Fyy" secondAttribute="trailing" id="IOJ-FH-j9E"/>
+                            <constraint firstItem="CSo-bf-Z4y" firstAttribute="top" secondItem="QdJ-ok-9il" secondAttribute="top" id="O1q-yC-sdw"/>
+                            <constraint firstItem="CSo-bf-Z4y" firstAttribute="leading" secondItem="72r-9s-Fyy" secondAttribute="leading" id="WvX-jM-BCX"/>
+                            <constraint firstItem="CSo-bf-Z4y" firstAttribute="bottom" secondItem="72r-9s-Fyy" secondAttribute="bottom" id="hIx-dJ-T8q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="72r-9s-Fyy"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="zFp-Wv-trT" id="TnS-JI-h67"/>
+                        <outlet property="tableView" destination="CSo-bf-Z4y" id="es9-FX-XyV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ikb-HH-Ueq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2900.625" y="2211.9718309859154"/>
+        </scene>
+        <!--Favorite User View Controller-->
+        <scene sceneID="u7U-ur-r54">
+            <objects>
+                <viewController storyboardIdentifier="FavoriteUserViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nfS-64-6CK" customClass="FavoriteUserViewController" customModule="NoteSchedule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mFY-Ak-x19">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p6d-2k-plI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="p6d-2k-plI" firstAttribute="leading" secondItem="vRl-Lz-XsN" secondAttribute="leading" id="3Co-DU-lDV"/>
+                            <constraint firstItem="p6d-2k-plI" firstAttribute="trailing" secondItem="vRl-Lz-XsN" secondAttribute="trailing" id="HIE-Ci-VNI"/>
+                            <constraint firstItem="p6d-2k-plI" firstAttribute="bottom" secondItem="vRl-Lz-XsN" secondAttribute="bottom" id="nth-X4-dlB"/>
+                            <constraint firstItem="p6d-2k-plI" firstAttribute="top" secondItem="mFY-Ak-x19" secondAttribute="top" id="wou-hh-q18"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vRl-Lz-XsN"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="p6d-2k-plI" id="4aB-EG-Ui7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WY2-uC-ogW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3549.375" y="2211.9718309859154"/>
         </scene>
         <!--Setting Pin Code View Controller-->
         <scene sceneID="xLc-md-0EF">
