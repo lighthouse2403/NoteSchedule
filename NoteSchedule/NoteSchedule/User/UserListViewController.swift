@@ -10,6 +10,7 @@ import UIKit
 
 class UserListViewController: OriginalViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var searchTextField: TextField!
     @IBOutlet weak var tableView: UITableView!
     var userArray = [UserModel]()
@@ -28,16 +29,22 @@ class UserListViewController: OriginalViewController, UITableViewDelegate, UITab
     func setupNavigationBar() {
         self.customTitle(title: "Liên hệ")
         self.addLeftBarItem(imageName: "back", title: "")
+        self.addRightBarItem(imageName: "tick", imageTouch: "", title: "")
     }
     
     func setupUI() {
         tableView.tableFooterView = UIView.init(frame: CGRect.zero)
         searchTextField.customBorder(radius: searchTextField.frame.height/2, color: Common.mainColor())
+        searchButton.setupBorder()
     }
     
     // MARK: - Action
     override func tappedLeftBarButton(sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    override func tappedRightBarButton(sender: UIButton) {
+        // Save user to favorite
     }
     
     @IBAction func tappedSearch(_ sender: UIButton) {

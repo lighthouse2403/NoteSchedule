@@ -835,6 +835,7 @@
                         <viewLayoutGuide key="safeArea" id="72r-9s-Fyy"/>
                     </view>
                     <connections>
+                        <outlet property="searchButton" destination="gmz-dX-SAE" id="VTp-es-jIl"/>
                         <outlet property="searchTextField" destination="9ph-xW-Hwq" id="lzB-Fh-ya3"/>
                         <outlet property="tableView" destination="CSo-bf-Z4y" id="es9-FX-XyV"/>
                     </connections>
