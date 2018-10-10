@@ -8,10 +8,11 @@
 
 import UIKit
 
-class UserListViewController: OriginalViewController {
+class UserListViewController: OriginalViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var searchTextField: TextField!
     @IBOutlet weak var tableView: UITableView!
+    var userArray = [UserModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,11 +32,43 @@ class UserListViewController: OriginalViewController {
     
     func setupUI() {
         tableView.tableFooterView = UIView.init(frame: CGRect.zero)
+        searchTextField.customBorder(radius: searchTextField.frame.height/2, color: Common.mainColor())
     }
     
-    // MẢK: - Action
+    // MARK: - Action
     override func tappedLeftBarButton(sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func tappedSearch(_ sender: UIButton) {
+
+        let searchString = searchTextField.text ?? ""
+        if searchString.count > 0 {
+            self.showActivityIndicator()
+            app_delegate.firebaseObject.getUser(max: 100000, onCompletionHandler: {
+                self.userArray = app_delegate.userArray.filter{$0.name.lowercased().contains(searchString.lowercased()) || $0.email.lowercased().contains(searchString.lowercased())}
+                self.tableView.reloadData()
+                self.hideActivityIndicator()
+            })
+        } else {
+            self.showAlert(title: "Lỗi", message: "Vui lòng nhập tên hoặc email", cancelTitle: "", okTitle: "Đóng", onOKAction: {
+                
+            })
+        }
+    }
+    
+    // MARK: - UITableView delegate, datasource
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return userArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UserTableViewCell") as! UserTableViewCell
+        cell.setupCell(user: userArray[indexPath.row])
+        return cell
+    }
 }

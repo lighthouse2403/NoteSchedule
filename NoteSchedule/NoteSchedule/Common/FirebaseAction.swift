@@ -48,17 +48,34 @@ class FirebaseAction: NSObject {
         var resultRef: DatabaseReference = Database.database().reference()
         resultRef = ref.child("users")
         
-    resultRef.child((UIDevice.current.identifierForVendor?.uuidString)!).child("lastOnline").setValue(serverTimestamp)
-        resultRef.child((UIDevice.current.identifierForVendor?.uuidString)!).child("name").setValue(name)
-    resultRef.child((UIDevice.current.identifierForVendor?.uuidString)!).child("appVersion").setValue(Common.getAppVersion())
-        resultRef.child((UIDevice.current.identifierForVendor?.uuidString)!).child("id").setValue((UIDevice.current.identifierForVendor?.uuidString)!)
+    resultRef.child(kUUID).child("lastOnline").setValue(serverTimestamp)
+    resultRef.child(kUUID).child("name").setValue(name)
+    resultRef.child(kUUID).child("appVersion").setValue(Common.getAppVersion())
+    resultRef.child(kUUID).child("id").setValue(kUUID)
         
     }
     
-    func getUser(max: NSInteger, onCompletionHandler: @escaping ([String : [String: AnyObject]]) -> ()) {
-        ref.child("users").queryLimited(toLast: UInt(max)).observe(.value, with: { (snapshot) in
-            let snapDict = snapshot.value as? [String : [String: AnyObject]] ?? [String : [String: AnyObject]]()
-            onCompletionHandler(snapDict)
+    func getUser(max: NSInteger, onCompletionHandler: @escaping () -> ()) {
+        // Get current time on server
+        let serverTimestamp = ServerValue.timestamp()
+
+        ref.child("currentTime").setValue(serverTimestamp)
+        
+        ref.child("currentTime").observeSingleEvent(of: .value, with: {serverTime in
+            app_delegate.serverTimeStamp = serverTime.value as! Double
+            
+            self.ref.child("users").queryLimited(toLast: UInt(max)).observeSingleEvent(of: .value, with: { (snapshot) in
+                app_delegate.userArray.removeAll()
+                let snapDict    = snapshot.value as? [String : [String: AnyObject]] ?? [String : [String: AnyObject]]()
+                snapDict.keys.forEach({key in
+                    if key != kUUID {
+                        let user = UserModel()
+                        user.initUserModel(user: snapDict[key]!)
+                        app_delegate.userArray.append(user)
+                    }
+                })
+                onCompletionHandler()
+            })
         })
     }
     

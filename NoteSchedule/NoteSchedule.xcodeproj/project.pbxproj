@@ -13,6 +13,8 @@
 		FB2D06D3216DA61B0066ADAE /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D06D2216DA61B0066ADAE /* UserListViewController.swift */; };
 		FB2D06D5216DB9FE0066ADAE /* FavoriteUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D06D4216DB9FE0066ADAE /* FavoriteUserViewController.swift */; };
 		FB2D06D7216DD5470066ADAE /* NoteSchedule.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = FB2D06D6216DD5470066ADAE /* NoteSchedule.xcmappingmodel */; };
+		FB2D06DA216DDE540066ADAE /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D06D9216DDE540066ADAE /* UserTableViewCell.swift */; };
+		FB2D06DD216DDEE80066ADAE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D06DC216DDEE80066ADAE /* UserModel.swift */; };
 		FB2D9E0521632CDB009BB827 /* DatePickerCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D9E0321632CDB009BB827 /* DatePickerCustomView.swift */; };
 		FB2D9E0621632CDB009BB827 /* DatePickerCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB2D9E0421632CDB009BB827 /* DatePickerCustomView.xib */; };
 		FB2D9E0821635103009BB827 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB2D9E0721635103009BB827 /* GoogleService-Info.plist */; };
@@ -122,6 +124,8 @@
 		FB2D06D2216DA61B0066ADAE /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		FB2D06D4216DB9FE0066ADAE /* FavoriteUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUserViewController.swift; sourceTree = "<group>"; };
 		FB2D06D6216DD5470066ADAE /* NoteSchedule.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = NoteSchedule.xcmappingmodel; sourceTree = "<group>"; };
+		FB2D06D9216DDE540066ADAE /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		FB2D06DC216DDEE80066ADAE /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		FB2D9E0321632CDB009BB827 /* DatePickerCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerCustomView.swift; sourceTree = "<group>"; };
 		FB2D9E0421632CDB009BB827 /* DatePickerCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerCustomView.xib; sourceTree = "<group>"; };
 		FB2D9E0721635103009BB827 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -260,10 +264,27 @@
 		FB2D06D1216DA5EE0066ADAE /* User */ = {
 			isa = PBXGroup;
 			children = (
+				FB2D06D8216DDE230066ADAE /* Cell */,
 				FB2D06D2216DA61B0066ADAE /* UserListViewController.swift */,
 				FB2D06D4216DB9FE0066ADAE /* FavoriteUserViewController.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		FB2D06D8216DDE230066ADAE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FB2D06D9216DDE540066ADAE /* UserTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FB2D06DB216DDECB0066ADAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB2D06DC216DDEE80066ADAE /* UserModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FB2D9E0221632CCA009BB827 /* CustomView */ = {
@@ -380,6 +401,7 @@
 				FB7D102221632765009B8127 /* Library */,
 				FB2D9E0221632CCA009BB827 /* CustomView */,
 				FB7D102121632765009B8127 /* Extension */,
+				FB2D06DB216DDECB0066ADAE /* Model */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -764,6 +786,7 @@
 				FB2D9E0C21636DFD009BB827 /* PasswordView.swift in Sources */,
 				FB7D107921632765009B8127 /* ItemController.swift in Sources */,
 				FB7D101421631EC5009B8127 /* EditScheduleViewController.swift in Sources */,
+				FB2D06DD216DDEE80066ADAE /* UserModel.swift in Sources */,
 				FB7D107421632765009B8127 /* GallerySwipeToDismissTransition.swift in Sources */,
 				FB7D106F21632765009B8127 /* GalleryDisplacedViewsDataSource.swift in Sources */,
 				FB7D106B21632765009B8127 /* UISlider.swift in Sources */,
@@ -794,6 +817,7 @@
 				FB7D106121632765009B8127 /* CAShapeLayer.swift in Sources */,
 				FB7D108921632765009B8127 /* UIViewExtension.swift in Sources */,
 				FB7D107F21632765009B8127 /* UtilityFunctions.swift in Sources */,
+				FB2D06DA216DDE540066ADAE /* UserTableViewCell.swift in Sources */,
 				FB7D108221632765009B8127 /* VideoViewController.swift in Sources */,
 				FB2D9E0521632CDB009BB827 /* DatePickerCustomView.swift in Sources */,
 				FB7D107521632765009B8127 /* GalleryViewController.swift in Sources */,

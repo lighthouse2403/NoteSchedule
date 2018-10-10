@@ -31,11 +31,20 @@ class MainTabBarViewController: UITabBarController {
                                                image: IMAGE("schedule"),
                                                selectedImage: IMAGE("schedule"))
         
+        // User list
+        let userListViewController      = main_storyboard.instantiateViewController(withIdentifier: "UserListViewController") as! UserListViewController
+        let userNavigationVC            = UINavigationController.init(rootViewController: userListViewController)
+        userNavigationVC.navigationBar.barTintColor = Common.mainColor()
+        let tabBar2 = self.setupController(userNavigationVC,
+                                           tabName: "Người dùng",
+                                           image: IMAGE("user"),
+                                           selectedImage: IMAGE("user"))
+        
         // Group list
         let groupListViewController  = main_storyboard.instantiateViewController(withIdentifier: "GroupsViewController") as! GroupsViewController
         let groupNavigationVC        = UINavigationController.init(rootViewController: groupListViewController)
         groupNavigationVC.navigationBar.barTintColor = Common.mainColor()
-        let tabBar2 = self.setupController(groupNavigationVC,
+        let tabBar3 = self.setupController(groupNavigationVC,
                                            tabName: "Nhóm",
                                            image: IMAGE("groups"),
                                            selectedImage: IMAGE("groups"))
@@ -44,12 +53,12 @@ class MainTabBarViewController: UITabBarController {
         let settingViewController       = main_storyboard.instantiateViewController(withIdentifier: "SettingViewController") as! SettingViewController
         let settingNavigationVC         = UINavigationController.init(rootViewController: settingViewController)
         settingNavigationVC.navigationBar.barTintColor = Common.mainColor()
-        let tabBar3 = self.setupController(settingNavigationVC,
+        let tabBar4 = self.setupController(settingNavigationVC,
                                            tabName: "Cài đặt",
                                            image: IMAGE("settings"),
                                            selectedImage: IMAGE("settings"))
         
-        self.viewControllers = [tabBar1,tabBar2,tabBar3]
+        self.viewControllers = [tabBar1,tabBar2,tabBar3,tabBar4]
     }
     
     func setupController(_ viewController: UIViewController, tabName: String, image: UIImage, selectedImage: UIImage) -> UIViewController {

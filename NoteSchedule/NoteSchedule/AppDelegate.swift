@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var firebaseObject          = FirebaseAction()
     var tabBarHeight: CGFloat   = 0.0
+    var userArray               = [UserModel]()
+    var serverTimeStamp         = Date().timeStamp()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow.init(frame: CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT))
