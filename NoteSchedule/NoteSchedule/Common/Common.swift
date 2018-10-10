@@ -279,7 +279,7 @@ class Common: NSObject {
         // Add new notification
         let notification:UILocalNotification = UILocalNotification()
         notification.alertTitle = "Nhắc nhớ"
- 
+        notification.soundName  = UILocalNotificationDefaultSoundName
         notification.alertBody  = note
         
         notification.fireDate   = fireDate
