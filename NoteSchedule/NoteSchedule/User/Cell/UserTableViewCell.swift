@@ -13,6 +13,7 @@ class UserTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var statusImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,11 +24,11 @@ class UserTableViewCell: UITableViewCell {
     }
 
     func setupCell(user: UserModel) {
-      nameLabel.text        = user.name
-        emailLabel.text     = user.email
-        
-        var durationString  = ""
-        let duration        = (app_delegate.serverTimeStamp - user.lastOnline)/1000
+        nameLabel.text          = user.name
+        emailLabel.text         = user.email
+        statusImageView.image   = UIImage.init(named: "offline_status")
+        var durationString      = ""
+        let duration            = (app_delegate.serverTimeStamp - user.lastOnline)/1000
         
         if duration > 432000 {
             // 5 days
@@ -43,6 +44,7 @@ class UserTableViewCell: UITableViewCell {
             durationString  = "\(minute) phút"
         } else {
             // Online
+            statusImageView.image   = UIImage.init(named: "online_status")
             durationString  = "Online"
         }
         statusLabel.text    = durationString
