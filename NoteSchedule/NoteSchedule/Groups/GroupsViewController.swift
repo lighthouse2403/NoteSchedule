@@ -53,6 +53,7 @@ class GroupsViewController: OriginalViewController, UITableViewDataSource, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "GroupTableViewCell") as! GroupTableViewCell
+        cell.setupCell(group: groupArray[indexPath.row])
         
         return cell
     }

@@ -521,7 +521,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="5C1-xs-nJ3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="GroupTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupTableViewCell" rowHeight="90" id="5C1-xs-nJ3" customClass="GroupTableViewCell" customModule="NoteSchedule" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5C1-xs-nJ3" id="tm7-nV-PlF">
@@ -587,6 +587,11 @@
                                                 <constraint firstItem="DaF-cj-B3V" firstAttribute="centerY" secondItem="Nii-1b-xWr" secondAttribute="centerY" id="ubd-07-ga5"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="groupNameLabel" destination="e9R-pz-DLK" id="WCW-rZ-Skr"/>
+                                            <outlet property="numberOfMembersLabel" destination="DaF-cj-B3V" id="k1A-e5-1gA"/>
+                                            <outlet property="numberOfScheduleLabel" destination="Yzy-VQ-bSc" id="6wE-pN-i83"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

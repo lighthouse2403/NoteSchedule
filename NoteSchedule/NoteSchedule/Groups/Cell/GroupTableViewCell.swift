@@ -10,6 +10,10 @@ import UIKit
 
 class GroupTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var groupNameLabel: UILabel!
+    @IBOutlet weak var numberOfMembersLabel: UILabel!
+    @IBOutlet weak var numberOfScheduleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,4 +24,9 @@ class GroupTableViewCell: UITableViewCell {
 
     }
 
+    func setupCell(group: GroupModel) {
+        groupNameLabel.text = group.name
+        numberOfMembersLabel.text   = "\(group.members.count) thành viên"
+        numberOfScheduleLabel.text  = "\(group.schedules.count) Kế hoạch"
+    }
 }
