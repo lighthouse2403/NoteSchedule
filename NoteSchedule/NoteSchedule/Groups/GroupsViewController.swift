@@ -8,8 +8,11 @@
 
 import UIKit
 
-class GroupsViewController: OriginalViewController {
+class GroupsViewController: OriginalViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
+    var groupArray = [GroupModel]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationBar()
@@ -37,5 +40,20 @@ class GroupsViewController: OriginalViewController {
         let newGroupViewController = main_storyboard.instantiateViewController(withIdentifier: "NewGroupViewController") as! NewGroupViewController
         
         self.navigationController?.pushViewController(newGroupViewController, animated: true)
+    }
+    
+    // MARK: - UITableView Datasource, Delegate
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return groupArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "GroupTableViewCell") as! GroupTableViewCell
+        
+        return cell
     }
 }

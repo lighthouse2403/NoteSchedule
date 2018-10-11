@@ -10,6 +10,10 @@ import UIKit
 
 class NewGroupViewController: OriginalViewController {
 
+    @IBOutlet weak var groupnameLabel: UILabel!
+    @IBOutlet weak var groupNameTextField: UITextField!
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationBar()

@@ -516,13 +516,32 @@
                     <view key="view" contentMode="scaleToFill" id="l15-I1-6Z6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HuC-P8-two">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Umz-Sj-wkf" id="W6I-nF-OQy"/>
+                                    <outlet property="delegate" destination="Umz-Sj-wkf" id="GQe-Tj-n49"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HuC-P8-two" firstAttribute="trailing" secondItem="ox8-LY-QVA" secondAttribute="trailing" id="9Rp-ja-r3C"/>
+                            <constraint firstItem="HuC-P8-two" firstAttribute="bottom" secondItem="ox8-LY-QVA" secondAttribute="bottom" id="IaY-Wk-WCh"/>
+                            <constraint firstItem="HuC-P8-two" firstAttribute="leading" secondItem="ox8-LY-QVA" secondAttribute="leading" id="LCN-xR-Nmk"/>
+                            <constraint firstItem="HuC-P8-two" firstAttribute="top" secondItem="l15-I1-6Z6" secondAttribute="top" id="WrS-nV-CDi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ox8-LY-QVA"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="HuC-P8-two" id="NIO-E3-aX6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0M-17-3Eu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-300" y="2899"/>
+            <point key="canvasLocation" x="-300" y="2898.5915492957747"/>
         </scene>
         <!--New Group View Controller-->
         <scene sceneID="rAZ-ZF-nlI">
@@ -531,13 +550,54 @@
                     <view key="view" contentMode="scaleToFill" id="12O-2Q-aDf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vJQ-wE-5jf">
+                                <rect key="frame" x="114" y="32.5" width="186" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="4y4-N8-81c"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMV-4Y-Dfp">
+                                <rect key="frame" x="10" y="40" width="89" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Dl-tw-b1N">
+                                <rect key="frame" x="0.0" y="87" width="320" height="481"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="DR8-LV-c5A" id="dbC-ll-hYh"/>
+                                    <outlet property="delegate" destination="DR8-LV-c5A" id="joz-8e-6Hs"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3Dl-tw-b1N" firstAttribute="top" secondItem="vJQ-wE-5jf" secondAttribute="bottom" constant="20" id="67V-md-MyC"/>
+                            <constraint firstItem="j4v-P7-mBx" firstAttribute="trailing" secondItem="vJQ-wE-5jf" secondAttribute="trailing" constant="20" id="GoD-1T-AOw"/>
+                            <constraint firstItem="vJQ-wE-5jf" firstAttribute="centerY" secondItem="BMV-4Y-Dfp" secondAttribute="centerY" id="Hsr-hF-GkN"/>
+                            <constraint firstItem="BMV-4Y-Dfp" firstAttribute="top" secondItem="j4v-P7-mBx" secondAttribute="top" constant="20" id="RUC-4b-Xbz"/>
+                            <constraint firstItem="BMV-4Y-Dfp" firstAttribute="leading" secondItem="j4v-P7-mBx" secondAttribute="leading" constant="10" id="T5p-sM-n8f"/>
+                            <constraint firstItem="3Dl-tw-b1N" firstAttribute="leading" secondItem="12O-2Q-aDf" secondAttribute="leading" id="Z4Z-7c-5MC"/>
+                            <constraint firstItem="3Dl-tw-b1N" firstAttribute="trailing" secondItem="j4v-P7-mBx" secondAttribute="trailing" id="dfG-NU-iqz"/>
+                            <constraint firstItem="vJQ-wE-5jf" firstAttribute="leading" secondItem="BMV-4Y-Dfp" secondAttribute="trailing" constant="15" id="g1y-cc-BXf"/>
+                            <constraint firstItem="3Dl-tw-b1N" firstAttribute="bottom" secondItem="j4v-P7-mBx" secondAttribute="bottom" id="gN9-af-nf9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="j4v-P7-mBx"/>
                     </view>
+                    <connections>
+                        <outlet property="groupNameTextField" destination="vJQ-wE-5jf" id="1he-YR-F3r"/>
+                        <outlet property="groupnameLabel" destination="BMV-4Y-Dfp" id="ndZ-oK-uWZ"/>
+                        <outlet property="tableView" destination="3Dl-tw-b1N" id="g6q-M0-fW5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chJ-i8-Eaq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="317" y="2895"/>
+            <point key="canvasLocation" x="316.875" y="2894.3661971830988"/>
         </scene>
         <!--Group Detail View Controller-->
         <scene sceneID="Qyr-mJ-7n3">

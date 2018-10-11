@@ -82,7 +82,7 @@ class FirebaseAction: NSObject {
     // MARK: - Sync schedule to firebase
     func sync() {
         var resultRef: DatabaseReference = Database.database().reference()
-        resultRef = ref.child("schedules").child((UIDevice.current.identifierForVendor?.uuidString)!)
+        resultRef = ref.child("schedules").child(kUUID)
 
         let scheduleArray = DatabaseManager.getNotYetSyncSchedule(context: nil)
         scheduleArray.forEach({schedule in
@@ -109,14 +109,14 @@ class FirebaseAction: NSObject {
      - name: group name
      - member: members in group
      **/
-    func createNewGroup(name: String, members: [String], onCompletionHandler: @escaping () -> ()) {
+    func createNewGroup(name: String, members: [String], schedules: [String], onCompletionHandler: @escaping () -> ()) {
         //comform to contact id
         let serverTimestamp = ServerValue.timestamp()
         
         var resultRef: DatabaseReference = Database.database().reference()
         resultRef = ref.child("groups")
         //comform to waiting share property
-        resultRef.childByAutoId().setValue(["name": name, "members": members, "admin": (UIDevice.current.identifierForVendor?.uuidString)!,"create_time": serverTimestamp])
+        resultRef.childByAutoId().setValue(["name": name, "members": members, "schedules": schedules, "admin": kUUID,"create_time": serverTimestamp])
         onCompletionHandler()
     }
 }

@@ -92,6 +92,10 @@
 		FB8C502C21661BFD0020350A /* SettingPinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C502B21661BFD0020350A /* SettingPinCodeViewController.swift */; };
 		FB8C502E21661C240020350A /* SettingProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C502D21661C240020350A /* SettingProfileViewController.swift */; };
 		FBA94F15216F010D00C82079 /* FavoriteUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA94F14216F010D00C82079 /* FavoriteUserTableViewCell.swift */; };
+		FBA94F17216F3A7C00C82079 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA94F16216F3A7C00C82079 /* GroupModel.swift */; };
+		FBA94F1A216F3D3700C82079 /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA94F19216F3D3700C82079 /* GroupTableViewCell.swift */; };
+		FBA94F1E216F3F7100C82079 /* GroupScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA94F1D216F3F7100C82079 /* GroupScheduleTableViewCell.swift */; };
+		FBA94F20216F3FA300C82079 /* GroupUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA94F1F216F3FA300C82079 /* GroupUserTableViewCell.swift */; };
 		FF551516B69E01D960FEB650 /* Pods_NoteScheduleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6CE86745B14EBD3D02B5281 /* Pods_NoteScheduleUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -210,6 +214,10 @@
 		FB8C502B21661BFD0020350A /* SettingPinCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPinCodeViewController.swift; sourceTree = "<group>"; };
 		FB8C502D21661C240020350A /* SettingProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProfileViewController.swift; sourceTree = "<group>"; };
 		FBA94F14216F010D00C82079 /* FavoriteUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUserTableViewCell.swift; sourceTree = "<group>"; };
+		FBA94F16216F3A7C00C82079 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		FBA94F19216F3D3700C82079 /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		FBA94F1D216F3F7100C82079 /* GroupScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		FBA94F1F216F3FA300C82079 /* GroupUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupUserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				FB2D06DC216DDEE80066ADAE /* UserModel.swift */,
+				FBA94F16216F3A7C00C82079 /* GroupModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -510,6 +519,7 @@
 		FB8C5020216607B90020350A /* Groups */ = {
 			isa = PBXGroup;
 			children = (
+				FBA94F18216F3C7F00C82079 /* Cell */,
 				FB8C5021216607D90020350A /* GroupsViewController.swift */,
 				FB8C5023216608DA0020350A /* NewGroupViewController.swift */,
 				FB8C502621660BF40020350A /* GroupDetailViewController.swift */,
@@ -534,6 +544,16 @@
 				FB8C502B21661BFD0020350A /* SettingPinCodeViewController.swift */,
 			);
 			path = PinCode;
+			sourceTree = "<group>";
+		};
+		FBA94F18216F3C7F00C82079 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FBA94F19216F3D3700C82079 /* GroupTableViewCell.swift */,
+				FBA94F1D216F3F7100C82079 /* GroupScheduleTableViewCell.swift */,
+				FBA94F1F216F3FA300C82079 /* GroupUserTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -755,6 +775,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBA94F1E216F3F7100C82079 /* GroupScheduleTableViewCell.swift in Sources */,
 				FB2D06D3216DA61B0066ADAE /* UserListViewController.swift in Sources */,
 				FB7D101821631ED7009B8127 /* OriginalViewController.swift in Sources */,
 				FB7D101621631EC5009B8127 /* ScheduleListViewController.swift in Sources */,
@@ -790,6 +811,7 @@
 				FB7D107921632765009B8127 /* ItemController.swift in Sources */,
 				FB7D101421631EC5009B8127 /* EditScheduleViewController.swift in Sources */,
 				FB2D06DD216DDEE80066ADAE /* UserModel.swift in Sources */,
+				FBA94F17216F3A7C00C82079 /* GroupModel.swift in Sources */,
 				FB7D107421632765009B8127 /* GallerySwipeToDismissTransition.swift in Sources */,
 				FB7D106F21632765009B8127 /* GalleryDisplacedViewsDataSource.swift in Sources */,
 				FB7D106B21632765009B8127 /* UISlider.swift in Sources */,
@@ -800,6 +822,7 @@
 				FB7D107821632765009B8127 /* ItemBaseController.swift in Sources */,
 				FB8C502921660BFF0020350A /* SettingViewController.swift in Sources */,
 				FB7D101321631EC5009B8127 /* ScheduleTableViewCell.swift in Sources */,
+				FBA94F20216F3FA300C82079 /* GroupUserTableViewCell.swift in Sources */,
 				FB7D105B21632765009B8127 /* LocalizeHelper.swift in Sources */,
 				FB7D108A21632765009B8127 /* Common.swift in Sources */,
 				FB8C502C21661BFD0020350A /* SettingPinCodeViewController.swift in Sources */,
@@ -824,6 +847,7 @@
 				FB7D108221632765009B8127 /* VideoViewController.swift in Sources */,
 				FBA94F15216F010D00C82079 /* FavoriteUserTableViewCell.swift in Sources */,
 				FB2D9E0521632CDB009BB827 /* DatePickerCustomView.swift in Sources */,
+				FBA94F1A216F3D3700C82079 /* GroupTableViewCell.swift in Sources */,
 				FB7D107521632765009B8127 /* GalleryViewController.swift in Sources */,
 				FB7D107C21632765009B8127 /* Slider.swift in Sources */,
 				FB7D108621632765009B8127 /* StringExtension.swift in Sources */,
