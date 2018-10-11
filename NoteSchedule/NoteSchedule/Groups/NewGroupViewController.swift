@@ -8,13 +8,13 @@
 
 import UIKit
 
-class NewGroupViewController: OriginalViewController {
+class NewGroupViewController: OriginalViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var groupnameLabel: UILabel!
     @IBOutlet weak var groupNameTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
-    var memberArray     = [User]()
+    var userArray       = [User]()
     var scheduleArray   = [Schedule]()
     
     override func viewDidLoad() {
@@ -59,6 +59,43 @@ class NewGroupViewController: OriginalViewController {
             self.showAlert(title: "Lỗi", message: "Bạn chưa nhập tên nhóm", cancelTitle: "Đóng", okTitle: "Bỏ qua", onOKAction: {
                 self.navigationController?.popViewController(animated: true)
             })
+        }
+    }
+    
+    // MARK: - UITableView Delegae, Datasource
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        switch section {
+        case 0:
+            // Users
+            return userArray.count
+            break
+        default:
+            // Schedules
+            return scheduleArray.count
+            break
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch indexPath.section {
+        case 0:
+            // User
+            let cell = tableView.dequeueReusableCell(withIdentifier: "GroupUserTableViewCell") as! GroupUserTableViewCell
+            cell.setupCell(user: userArray[indexPath.row])
+            
+            return cell
+            break
+        default:
+            // Schedule
+            let cell = tableView.dequeueReusableCell(withIdentifier: "GroupScheduleTableViewCell") as! GroupScheduleTableViewCell
+            cell.setupCell(user: scheduleArray[indexPath.row])
+
+            return cell
+            break
         }
     }
 }

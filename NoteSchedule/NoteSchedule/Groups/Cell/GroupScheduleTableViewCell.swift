@@ -10,6 +10,10 @@ import UIKit
 
 class GroupScheduleTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var noteLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var statusSwitch: UISwitch!
+    @IBOutlet weak var lockImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +25,19 @@ class GroupScheduleTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func setupCell(schedule: Schedule) {
+        noteLabel.text      = schedule.note
+        noteLabel.setLineHeight(lineHeight: 1.2, lineSpacing: 1)
+        timeLabel.text      = Common.stringFromTimeInterval(timeInterval: schedule.time, format: "HH:mm  dd-MM-yyyy")
+        statusSwitch.isOn   = schedule.isAlarm
+        
+        // Border UI
+        timeLabel.setupBorder()
+        timeLabel.customBorder(radius: timeLabel.frame.height/2, color: Common.mainColor(), width: 2)
+        if (schedule.password?.count)! > 0 {
+            lockImageView.isHidden = false
+        } else {
+            lockImageView.isHidden = true
+        }
+    }
 }
