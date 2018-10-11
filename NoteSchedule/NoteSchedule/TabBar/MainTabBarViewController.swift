@@ -32,10 +32,10 @@ class MainTabBarViewController: UITabBarController {
                                                selectedImage: IMAGE("schedule"))
         
         // User list
-        let userListViewController      = main_storyboard.instantiateViewController(withIdentifier: "UserListViewController") as! UserListViewController
-        let userNavigationVC            = UINavigationController.init(rootViewController: userListViewController)
-        userNavigationVC.navigationBar.barTintColor = Common.mainColor()
-        let tabBar2 = self.setupController(userNavigationVC,
+        let favoriteUserViewController              = main_storyboard.instantiateViewController(withIdentifier: "FavoriteUserViewController") as! FavoriteUserViewController
+        let favoriteUserNavigationVC                = UINavigationController.init(rootViewController: favoriteUserViewController)
+        favoriteUserNavigationVC.navigationBar.barTintColor = Common.mainColor()
+        let tabBar2 = self.setupController(favoriteUserNavigationVC,
                                            tabName: "Người dùng",
                                            image: IMAGE("user"),
                                            selectedImage: IMAGE("user"))

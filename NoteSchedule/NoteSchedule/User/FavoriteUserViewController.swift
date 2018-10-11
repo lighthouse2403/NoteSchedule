@@ -31,4 +31,10 @@ class FavoriteUserViewController: OriginalViewController {
     func setupUI() {
         tableView.tableFooterView = UIView.init(frame: CGRect.zero)
     }
+    
+    // MARK: Action
+    override func tappedRightBarButton(sender: UIButton) {
+        let userListViewController = main_storyboard.instantiateViewController(withIdentifier: "UserListViewController") as! UserListViewController
+        self.navigationController?.pushViewController(userListViewController, animated: true)
+    }
 }
