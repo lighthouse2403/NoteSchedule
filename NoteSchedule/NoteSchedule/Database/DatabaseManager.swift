@@ -152,4 +152,16 @@ class DatabaseManager: NSObject {
         let user = User.mr_findFirst(with: predicate, in: currentContext!)
         return user
     }
+    
+    static func getAllUser(context: NSManagedObjectContext?) -> [User] {
+        let currentContext: NSManagedObjectContext?
+        
+        if context == nil {
+            currentContext = NSManagedObjectContext.mr_default()
+        } else {
+            currentContext = context
+        }
+        let userArray = User.mr_findAllSorted(by: "lastOnline", ascending: true, in: currentContext!) as? [User]
+        return userArray != nil ? userArray! : [User]()
+    }
 }

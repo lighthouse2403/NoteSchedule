@@ -91,6 +91,7 @@
 		FB8C502921660BFF0020350A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C502821660BFF0020350A /* SettingViewController.swift */; };
 		FB8C502C21661BFD0020350A /* SettingPinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C502B21661BFD0020350A /* SettingPinCodeViewController.swift */; };
 		FB8C502E21661C240020350A /* SettingProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C502D21661C240020350A /* SettingProfileViewController.swift */; };
+		FBA94F15216F010D00C82079 /* FavoriteUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA94F14216F010D00C82079 /* FavoriteUserTableViewCell.swift */; };
 		FF551516B69E01D960FEB650 /* Pods_NoteScheduleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6CE86745B14EBD3D02B5281 /* Pods_NoteScheduleUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -208,6 +209,7 @@
 		FB8C502821660BFF0020350A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		FB8C502B21661BFD0020350A /* SettingPinCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPinCodeViewController.swift; sourceTree = "<group>"; };
 		FB8C502D21661C240020350A /* SettingProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProfileViewController.swift; sourceTree = "<group>"; };
+		FBA94F14216F010D00C82079 /* FavoriteUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				FB2D06D9216DDE540066ADAE /* UserTableViewCell.swift */,
+				FBA94F14216F010D00C82079 /* FavoriteUserTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -819,6 +822,7 @@
 				FB7D107F21632765009B8127 /* UtilityFunctions.swift in Sources */,
 				FB2D06DA216DDE540066ADAE /* UserTableViewCell.swift in Sources */,
 				FB7D108221632765009B8127 /* VideoViewController.swift in Sources */,
+				FBA94F15216F010D00C82079 /* FavoriteUserTableViewCell.swift in Sources */,
 				FB2D9E0521632CDB009BB827 /* DatePickerCustomView.swift in Sources */,
 				FB7D107521632765009B8127 /* GalleryViewController.swift in Sources */,
 				FB7D107C21632765009B8127 /* Slider.swift in Sources */,
