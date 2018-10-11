@@ -10,9 +10,10 @@ import UIKit
 
 class SettingViewController: OriginalViewController, UITableViewDelegate, UITableViewDataSource {
 
-    let titleArray   = ["Thông tin người dùng","Cài đặt mật khẩu"]
-    let imageArray   = ["user_info","pin_code"]
+    let titleArray   = ["Thông tin người dùng","Cài đặt mật khẩu","Chia sẻ ứng dụng"]
+    let imageArray   = ["user_info","pin_code","share"]
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var versionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,7 @@ class SettingViewController: OriginalViewController, UITableViewDelegate, UITabl
     
     func setupNavigationBar() {
         self.customTitle(title: "Cài đặt")
+        versionLabel.text = Common.getAppVersion()
     }
     
     func setupUI() {
@@ -62,11 +64,14 @@ class SettingViewController: OriginalViewController, UITableViewDelegate, UITabl
             let settingUserInfoViewController = main_storyboard.instantiateViewController(withIdentifier: "SettingProfileViewController") as! SettingProfileViewController
             self.navigationController?.pushViewController(settingUserInfoViewController, animated: true)
             break
-            
-        default:
+        case 1:
+            // Setting pin code
             let settingPinCodeViewController = main_storyboard.instantiateViewController(withIdentifier: "SettingPinCodeViewController") as! SettingPinCodeViewController
             self.present(settingPinCodeViewController, animated: true, completion: nil)
-
+            break
+        default:
+            // Share App
+            Common.shareApplication(visibleViewController: self)
             break
         }
     }

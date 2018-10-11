@@ -141,6 +141,15 @@ class Common: NSObject {
         return Common.getAppStoreLink(appId).appending("?action=write-review")
     }
     
+    static func shareApplication(visibleViewController: UIViewController) {
+        if let name = NSURL(string: "https://itunes.apple.com/us/app/pregnancy/id1387518399?ls=1&mt=8") {
+            let objectsToShare = [name]
+            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+            
+            visibleViewController.present(activityVC, animated: true, completion: nil)
+        }
+    }
+    
     /* Open external link from app */
     class func openExternalLink(link: String?) -> Bool {
         guard let url = URL(string: link ?? "") else {
